@@ -1,0 +1,2442 @@
+[1/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,588,689 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,610,228 msg/sec
+                  LockFreeQueue2, 1,s:  71,587,136 msg/sec
+                  LockFreeQueue2, 1,i:  71,126,891 msg/sec
+          boost::lockfree::queue, 1,s:   2,288,758 msg/sec
+          boost::lockfree::queue, 1,i:   2,289,382 msg/sec
+                  TicketSpinlock, 1,s:   1,852,718 msg/sec
+                  TicketSpinlock, 1,i:   1,848,504 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  10,049,656 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,497,256 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,726,179 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,624,700 msg/sec
+                pthread_spinlock, 1,s:   3,669,608 msg/sec
+                pthread_spinlock, 1,i:   3,669,073 msg/sec
+                      std::mutex, 1,s:   5,632,211 msg/sec
+                      std::mutex, 1,i:   5,610,892 msg/sec
+                 tbb::spin_mutex, 1,s:  22,677,156 msg/sec
+                 tbb::spin_mutex, 1,i:  22,699,130 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,465,337 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,460,138 msg/sec
+                     AtomicQueue, 1,s:  19,743,562 msg/sec
+                     AtomicQueue, 1,i:  20,104,276 msg/sec
+                     AtomicQueue, 1,s:   4,227,403 msg/sec
+                     AtomicQueue, 1,i:   4,228,648 msg/sec
+                    AtomicQueueB, 1,s:  16,139,642 msg/sec
+                    AtomicQueueB, 1,i:  15,776,083 msg/sec
+                    AtomicQueueB, 1,s:   4,222,418 msg/sec
+                    AtomicQueueB, 1,i:   4,252,608 msg/sec
+             OptimistAtomicQueue, 1,s: 443,764,006 msg/sec
+             OptimistAtomicQueue, 1,i: 423,172,950 msg/sec
+             OptimistAtomicQueue, 1,s:  54,015,396 msg/sec
+             OptimistAtomicQueue, 1,i:  53,360,824 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,541,820 msg/sec
+            OptimistAtomicQueueB, 1,i:  66,436,133 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,968,608 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,455,553 msg/sec
+                    AtomicQueue2, 1,s:  17,154,577 msg/sec
+                    AtomicQueue2, 1,i:  15,739,566 msg/sec
+                    AtomicQueue2, 1,s:   4,950,521 msg/sec
+                    AtomicQueue2, 1,i:   5,000,914 msg/sec
+                   AtomicQueueB2, 1,s:  19,117,973 msg/sec
+                   AtomicQueueB2, 1,i:  14,121,188 msg/sec
+                   AtomicQueueB2, 1,s:   4,386,142 msg/sec
+                   AtomicQueueB2, 1,i:   4,345,051 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,291,024 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,128,122 msg/sec
+            OptimistAtomicQueue2, 1,s:  32,924,054 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,386,283 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,656,559 msg/sec
+           OptimistAtomicQueueB2, 1,i:  49,952,170 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,111,058 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,789,992 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000492 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000780 sec/round-trip
+                  TicketSpinlock: 0.000000717 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000676 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000674 sec/round-trip
+                pthread_spinlock: 0.000000756 sec/round-trip
+                      std::mutex: 0.000004642 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001139 sec/round-trip
+                     AtomicQueue: 0.000000393 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000355 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000441 sec/round-trip
+            OptimistAtomicQueue2: 0.000000350 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000361 sec/round-trip
+
+[2/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,830,974 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  30,923,955 msg/sec
+                  LockFreeQueue2, 1,s:  71,677,188 msg/sec
+                  LockFreeQueue2, 1,i:  71,096,398 msg/sec
+          boost::lockfree::queue, 1,s:   2,288,257 msg/sec
+          boost::lockfree::queue, 1,i:   2,293,047 msg/sec
+                  TicketSpinlock, 1,s:   1,887,884 msg/sec
+                  TicketSpinlock, 1,i:   1,823,510 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  11,039,333 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,854,823 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,733,279 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,654,229 msg/sec
+                pthread_spinlock, 1,s:   3,641,366 msg/sec
+                pthread_spinlock, 1,i:   3,649,960 msg/sec
+                      std::mutex, 1,s:   5,796,758 msg/sec
+                      std::mutex, 1,i:   5,845,881 msg/sec
+                 tbb::spin_mutex, 1,s:  22,838,699 msg/sec
+                 tbb::spin_mutex, 1,i:  22,682,649 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,460,249 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,463,172 msg/sec
+                     AtomicQueue, 1,s:  24,803,949 msg/sec
+                     AtomicQueue, 1,i:  23,519,544 msg/sec
+                     AtomicQueue, 1,s:   4,232,671 msg/sec
+                     AtomicQueue, 1,i:   4,209,145 msg/sec
+                    AtomicQueueB, 1,s:  15,963,284 msg/sec
+                    AtomicQueueB, 1,i:  15,754,653 msg/sec
+                    AtomicQueueB, 1,s:   4,229,141 msg/sec
+                    AtomicQueueB, 1,i:   4,195,626 msg/sec
+             OptimistAtomicQueue, 1,s: 431,086,510 msg/sec
+             OptimistAtomicQueue, 1,i: 410,241,262 msg/sec
+             OptimistAtomicQueue, 1,s:  53,240,311 msg/sec
+             OptimistAtomicQueue, 1,i:  53,998,596 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,884,496 msg/sec
+            OptimistAtomicQueueB, 1,i:  62,718,062 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,763,267 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,998,596 msg/sec
+                    AtomicQueue2, 1,s:  15,812,821 msg/sec
+                    AtomicQueue2, 1,i:  16,405,604 msg/sec
+                    AtomicQueue2, 1,s:   4,979,960 msg/sec
+                    AtomicQueue2, 1,i:   4,945,130 msg/sec
+                   AtomicQueueB2, 1,s:  14,369,129 msg/sec
+                   AtomicQueueB2, 1,i:  18,926,725 msg/sec
+                   AtomicQueueB2, 1,s:   4,340,922 msg/sec
+                   AtomicQueueB2, 1,i:   4,317,534 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,105,456 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,263,852 msg/sec
+            OptimistAtomicQueue2, 1,s:  38,467,382 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,026,157 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,553,612 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,434,060 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,287,886 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,922,766 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000488 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000668 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004693 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001145 sec/round-trip
+                     AtomicQueue: 0.000000379 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000342 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000355 sec/round-trip
+
+[3/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,886,545 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,300,050 msg/sec
+                  LockFreeQueue2, 1,s:  72,066,150 msg/sec
+                  LockFreeQueue2, 1,i:  69,030,262 msg/sec
+          boost::lockfree::queue, 1,s:   2,302,331 msg/sec
+          boost::lockfree::queue, 1,i:   2,319,181 msg/sec
+                  TicketSpinlock, 1,s:   1,838,467 msg/sec
+                  TicketSpinlock, 1,i:   1,846,088 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,917,767 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,420,642 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,717,915 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,659,198 msg/sec
+                pthread_spinlock, 1,s:   3,606,414 msg/sec
+                pthread_spinlock, 1,i:   3,588,684 msg/sec
+                      std::mutex, 1,s:   5,168,620 msg/sec
+                      std::mutex, 1,i:   5,603,504 msg/sec
+                 tbb::spin_mutex, 1,s:  22,699,053 msg/sec
+                 tbb::spin_mutex, 1,i:  22,059,263 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,453,085 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,457,000 msg/sec
+                     AtomicQueue, 1,s:  19,991,599 msg/sec
+                     AtomicQueue, 1,i:  25,716,354 msg/sec
+                     AtomicQueue, 1,s:   4,211,276 msg/sec
+                     AtomicQueue, 1,i:   4,190,551 msg/sec
+                    AtomicQueueB, 1,s:  15,691,376 msg/sec
+                    AtomicQueueB, 1,i:  15,866,706 msg/sec
+                    AtomicQueueB, 1,s:   4,212,582 msg/sec
+                    AtomicQueueB, 1,i:   4,205,289 msg/sec
+             OptimistAtomicQueue, 1,s: 444,978,418 msg/sec
+             OptimistAtomicQueue, 1,i: 358,395,963 msg/sec
+             OptimistAtomicQueue, 1,s:  53,155,835 msg/sec
+             OptimistAtomicQueue, 1,i:  53,834,902 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,487,629 msg/sec
+            OptimistAtomicQueueB, 1,i:  62,700,720 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,688,450 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,300,136 msg/sec
+                    AtomicQueue2, 1,s:  19,379,540 msg/sec
+                    AtomicQueue2, 1,i:  21,215,261 msg/sec
+                    AtomicQueue2, 1,s:   5,045,834 msg/sec
+                    AtomicQueue2, 1,i:   4,928,870 msg/sec
+                   AtomicQueueB2, 1,s:  16,730,896 msg/sec
+                   AtomicQueueB2, 1,i:  18,875,442 msg/sec
+                   AtomicQueueB2, 1,s:   4,398,439 msg/sec
+                   AtomicQueueB2, 1,i:   4,367,011 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,094,937 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,331,955 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,594,970 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,258,800 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,223,116 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,456,810 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,018,103 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,807,787 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000671 sec/round-trip
+                pthread_spinlock: 0.000000748 sec/round-trip
+                      std::mutex: 0.000004621 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001146 sec/round-trip
+                     AtomicQueue: 0.000000378 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000344 sec/round-trip
+                    AtomicQueue2: 0.000000429 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000357 sec/round-trip
+
+[4/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,712,929 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,480,129 msg/sec
+                  LockFreeQueue2, 1,s:  72,871,213 msg/sec
+                  LockFreeQueue2, 1,i:  70,831,713 msg/sec
+          boost::lockfree::queue, 1,s:   2,290,696 msg/sec
+          boost::lockfree::queue, 1,i:   2,290,828 msg/sec
+                  TicketSpinlock, 1,s:   1,839,875 msg/sec
+                  TicketSpinlock, 1,i:   1,854,854 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,518,383 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,850,084 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,760,455 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,632,128 msg/sec
+                pthread_spinlock, 1,s:   3,671,563 msg/sec
+                pthread_spinlock, 1,i:   3,658,653 msg/sec
+                      std::mutex, 1,s:   5,200,212 msg/sec
+                      std::mutex, 1,i:   4,638,702 msg/sec
+                 tbb::spin_mutex, 1,s:  22,952,778 msg/sec
+                 tbb::spin_mutex, 1,i:  21,053,992 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,464,072 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,464,090 msg/sec
+                     AtomicQueue, 1,s:  25,329,357 msg/sec
+                     AtomicQueue, 1,i:  25,904,494 msg/sec
+                     AtomicQueue, 1,s:   4,211,357 msg/sec
+                     AtomicQueue, 1,i:   4,213,360 msg/sec
+                    AtomicQueueB, 1,s:  15,787,029 msg/sec
+                    AtomicQueueB, 1,i:  15,718,399 msg/sec
+                    AtomicQueueB, 1,s:   4,209,249 msg/sec
+                    AtomicQueueB, 1,i:   4,180,537 msg/sec
+             OptimistAtomicQueue, 1,s: 442,069,060 msg/sec
+             OptimistAtomicQueue, 1,i: 333,807,339 msg/sec
+             OptimistAtomicQueue, 1,s:  54,425,056 msg/sec
+             OptimistAtomicQueue, 1,i:  52,233,259 msg/sec
+            OptimistAtomicQueueB, 1,s:  65,203,372 msg/sec
+            OptimistAtomicQueueB, 1,i:  68,312,310 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,081,345 msg/sec
+            OptimistAtomicQueueB, 1,i:  52,662,538 msg/sec
+                    AtomicQueue2, 1,s:  17,229,912 msg/sec
+                    AtomicQueue2, 1,i:  16,820,778 msg/sec
+                    AtomicQueue2, 1,s:   4,883,972 msg/sec
+                    AtomicQueue2, 1,i:   4,989,329 msg/sec
+                   AtomicQueueB2, 1,s:  14,409,859 msg/sec
+                   AtomicQueueB2, 1,i:  20,231,742 msg/sec
+                   AtomicQueueB2, 1,s:   4,457,407 msg/sec
+                   AtomicQueueB2, 1,i:   4,343,709 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,118,731 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,001,947 msg/sec
+            OptimistAtomicQueue2, 1,s:  34,015,445 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,177,465 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,507,882 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,765,879 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,552,766 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,733,604 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000675 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004641 sec/round-trip
+                 tbb::spin_mutex: 0.000000665 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001152 sec/round-trip
+                     AtomicQueue: 0.000000406 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000439 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000353 sec/round-trip
+
+[5/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,281,897 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,425,906 msg/sec
+                  LockFreeQueue2, 1,s:  72,646,806 msg/sec
+                  LockFreeQueue2, 1,i:  69,894,243 msg/sec
+          boost::lockfree::queue, 1,s:   2,283,226 msg/sec
+          boost::lockfree::queue, 1,i:   2,285,020 msg/sec
+                  TicketSpinlock, 1,s:   1,846,083 msg/sec
+                  TicketSpinlock, 1,i:   1,844,885 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,522,895 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,457,104 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,728,825 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,656,377 msg/sec
+                pthread_spinlock, 1,s:   3,672,064 msg/sec
+                pthread_spinlock, 1,i:   3,726,542 msg/sec
+                      std::mutex, 1,s:   5,732,437 msg/sec
+                      std::mutex, 1,i:   5,649,561 msg/sec
+                 tbb::spin_mutex, 1,s:  24,095,590 msg/sec
+                 tbb::spin_mutex, 1,i:  23,132,918 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,428,544 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,463,739 msg/sec
+                     AtomicQueue, 1,s:  20,979,389 msg/sec
+                     AtomicQueue, 1,i:  20,408,042 msg/sec
+                     AtomicQueue, 1,s:   4,208,374 msg/sec
+                     AtomicQueue, 1,i:   4,217,072 msg/sec
+                    AtomicQueueB, 1,s:  15,904,051 msg/sec
+                    AtomicQueueB, 1,i:  15,703,685 msg/sec
+                    AtomicQueueB, 1,s:   4,213,507 msg/sec
+                    AtomicQueueB, 1,i:   4,230,705 msg/sec
+             OptimistAtomicQueue, 1,s: 412,633,177 msg/sec
+             OptimistAtomicQueue, 1,i: 348,208,813 msg/sec
+             OptimistAtomicQueue, 1,s:  52,367,508 msg/sec
+             OptimistAtomicQueue, 1,i:  52,265,281 msg/sec
+            OptimistAtomicQueueB, 1,s:  66,454,676 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,394,444 msg/sec
+            OptimistAtomicQueueB, 1,s:  52,853,005 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,531,900 msg/sec
+                    AtomicQueue2, 1,s:  16,693,167 msg/sec
+                    AtomicQueue2, 1,i:  16,669,767 msg/sec
+                    AtomicQueue2, 1,s:   4,969,042 msg/sec
+                    AtomicQueue2, 1,i:   5,121,761 msg/sec
+                   AtomicQueueB2, 1,s:  14,346,623 msg/sec
+                   AtomicQueueB2, 1,i:  14,143,141 msg/sec
+                   AtomicQueueB2, 1,s:   4,341,322 msg/sec
+                   AtomicQueueB2, 1,i:   4,507,187 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,056,756 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,043,833 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,480,480 msg/sec
+            OptimistAtomicQueue2, 1,i:  34,173,523 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,800,772 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,231,056 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,623,836 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,793,933 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000671 sec/round-trip
+                pthread_spinlock: 0.000000745 sec/round-trip
+                      std::mutex: 0.000004629 sec/round-trip
+                 tbb::spin_mutex: 0.000000661 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001150 sec/round-trip
+                     AtomicQueue: 0.000000398 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000356 sec/round-trip
+
+[6/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,548,537 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  32,284,193 msg/sec
+                  LockFreeQueue2, 1,s:  72,389,175 msg/sec
+                  LockFreeQueue2, 1,i:  68,636,817 msg/sec
+          boost::lockfree::queue, 1,s:   2,295,381 msg/sec
+          boost::lockfree::queue, 1,i:   2,284,904 msg/sec
+                  TicketSpinlock, 1,s:   1,826,854 msg/sec
+                  TicketSpinlock, 1,i:   1,842,766 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,498,121 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,526,720 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,740,220 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,771,235 msg/sec
+                pthread_spinlock, 1,s:   3,671,860 msg/sec
+                pthread_spinlock, 1,i:   3,659,218 msg/sec
+                      std::mutex, 1,s:   5,620,874 msg/sec
+                      std::mutex, 1,i:   5,219,714 msg/sec
+                 tbb::spin_mutex, 1,s:  24,197,408 msg/sec
+                 tbb::spin_mutex, 1,i:  23,266,743 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,469,245 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,470,453 msg/sec
+                     AtomicQueue, 1,s:  20,144,066 msg/sec
+                     AtomicQueue, 1,i:  19,848,878 msg/sec
+                     AtomicQueue, 1,s:   4,218,531 msg/sec
+                     AtomicQueue, 1,i:   4,217,208 msg/sec
+                    AtomicQueueB, 1,s:  15,694,420 msg/sec
+                    AtomicQueueB, 1,i:  15,918,740 msg/sec
+                    AtomicQueueB, 1,s:   4,197,225 msg/sec
+                    AtomicQueueB, 1,i:   4,173,095 msg/sec
+             OptimistAtomicQueue, 1,s: 473,700,166 msg/sec
+             OptimistAtomicQueue, 1,i: 461,361,014 msg/sec
+             OptimistAtomicQueue, 1,s:  53,466,443 msg/sec
+             OptimistAtomicQueue, 1,i:  52,651,725 msg/sec
+            OptimistAtomicQueueB, 1,s:  68,991,972 msg/sec
+            OptimistAtomicQueueB, 1,i:  65,715,241 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,061,038 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,877,539 msg/sec
+                    AtomicQueue2, 1,s:  16,716,641 msg/sec
+                    AtomicQueue2, 1,i:  16,048,587 msg/sec
+                    AtomicQueue2, 1,s:   4,961,820 msg/sec
+                    AtomicQueue2, 1,i:   5,054,700 msg/sec
+                   AtomicQueueB2, 1,s:  20,033,231 msg/sec
+                   AtomicQueueB2, 1,i:  14,393,090 msg/sec
+                   AtomicQueueB2, 1,s:   4,325,473 msg/sec
+                   AtomicQueueB2, 1,i:   4,445,640 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,262,561 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,078,236 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,243,774 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,727,779 msg/sec
+           OptimistAtomicQueueB2, 1,s:  51,019,653 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,750,730 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,058,924 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,988,019 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000672 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000748 sec/round-trip
+                      std::mutex: 0.000004644 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001150 sec/round-trip
+                     AtomicQueue: 0.000000381 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000341 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000356 sec/round-trip
+
+[7/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,488,247 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,558,065 msg/sec
+                  LockFreeQueue2, 1,s:  72,314,893 msg/sec
+                  LockFreeQueue2, 1,i:  70,834,271 msg/sec
+          boost::lockfree::queue, 1,s:   2,304,485 msg/sec
+          boost::lockfree::queue, 1,i:   2,291,026 msg/sec
+                  TicketSpinlock, 1,s:   1,857,611 msg/sec
+                  TicketSpinlock, 1,i:   1,848,230 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  12,026,422 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:  10,104,993 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,749,573 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,685,376 msg/sec
+                pthread_spinlock, 1,s:   3,627,567 msg/sec
+                pthread_spinlock, 1,i:   3,598,256 msg/sec
+                      std::mutex, 1,s:   5,084,023 msg/sec
+                      std::mutex, 1,i:   5,832,105 msg/sec
+                 tbb::spin_mutex, 1,s:  22,756,328 msg/sec
+                 tbb::spin_mutex, 1,i:  22,268,094 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,463,595 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,462,175 msg/sec
+                     AtomicQueue, 1,s:  19,923,120 msg/sec
+                     AtomicQueue, 1,i:  29,548,679 msg/sec
+                     AtomicQueue, 1,s:   4,216,848 msg/sec
+                     AtomicQueue, 1,i:   4,215,848 msg/sec
+                    AtomicQueueB, 1,s:  15,646,440 msg/sec
+                    AtomicQueueB, 1,i:  15,149,593 msg/sec
+                    AtomicQueueB, 1,s:   4,279,173 msg/sec
+                    AtomicQueueB, 1,i:   4,158,759 msg/sec
+             OptimistAtomicQueue, 1,s: 475,884,550 msg/sec
+             OptimistAtomicQueue, 1,i: 335,220,625 msg/sec
+             OptimistAtomicQueue, 1,s:  52,873,293 msg/sec
+             OptimistAtomicQueue, 1,i:  53,133,466 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,414,603 msg/sec
+            OptimistAtomicQueueB, 1,i:  69,535,565 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,471,417 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,022,137 msg/sec
+                    AtomicQueue2, 1,s:  15,609,556 msg/sec
+                    AtomicQueue2, 1,i:  16,571,545 msg/sec
+                    AtomicQueue2, 1,s:   5,078,681 msg/sec
+                    AtomicQueue2, 1,i:   5,005,614 msg/sec
+                   AtomicQueueB2, 1,s:  20,732,108 msg/sec
+                   AtomicQueueB2, 1,i:  14,118,861 msg/sec
+                   AtomicQueueB2, 1,s:   4,306,479 msg/sec
+                   AtomicQueueB2, 1,i:   4,309,618 msg/sec
+            OptimistAtomicQueue2, 1,s:  29,978,580 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,233,602 msg/sec
+            OptimistAtomicQueue2, 1,s:  32,928,998 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,321,137 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,291,919 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,740,996 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,905,611 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,946,019 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000777 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000668 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004763 sec/round-trip
+                 tbb::spin_mutex: 0.000000665 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000387 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000352 sec/round-trip
+                    AtomicQueue2: 0.000000432 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[8/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,433,078 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,663,886 msg/sec
+                  LockFreeQueue2, 1,s:  72,227,145 msg/sec
+                  LockFreeQueue2, 1,i:  70,375,304 msg/sec
+          boost::lockfree::queue, 1,s:   2,281,453 msg/sec
+          boost::lockfree::queue, 1,i:   2,276,221 msg/sec
+                  TicketSpinlock, 1,s:   1,837,370 msg/sec
+                  TicketSpinlock, 1,i:   1,843,618 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  11,767,244 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,860,000 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,738,464 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,669,206 msg/sec
+                pthread_spinlock, 1,s:   3,641,294 msg/sec
+                pthread_spinlock, 1,i:   3,663,133 msg/sec
+                      std::mutex, 1,s:   5,396,082 msg/sec
+                      std::mutex, 1,i:   5,875,683 msg/sec
+                 tbb::spin_mutex, 1,s:  22,982,894 msg/sec
+                 tbb::spin_mutex, 1,i:  21,821,720 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,482,251 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,484,795 msg/sec
+                     AtomicQueue, 1,s:  27,809,016 msg/sec
+                     AtomicQueue, 1,i:  31,169,048 msg/sec
+                     AtomicQueue, 1,s:   4,205,551 msg/sec
+                     AtomicQueue, 1,i:   4,191,946 msg/sec
+                    AtomicQueueB, 1,s:  15,716,257 msg/sec
+                    AtomicQueueB, 1,i:  24,008,053 msg/sec
+                    AtomicQueueB, 1,s:   4,214,557 msg/sec
+                    AtomicQueueB, 1,i:   4,179,775 msg/sec
+             OptimistAtomicQueue, 1,s: 458,108,287 msg/sec
+             OptimistAtomicQueue, 1,i: 335,261,084 msg/sec
+             OptimistAtomicQueue, 1,s:  53,436,358 msg/sec
+             OptimistAtomicQueue, 1,i:  52,584,944 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,996,516 msg/sec
+            OptimistAtomicQueueB, 1,i:  68,363,167 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,682,997 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,037,550 msg/sec
+                    AtomicQueue2, 1,s:  17,161,969 msg/sec
+                    AtomicQueue2, 1,i:  17,115,705 msg/sec
+                    AtomicQueue2, 1,s:   4,951,158 msg/sec
+                    AtomicQueue2, 1,i:   4,996,992 msg/sec
+                   AtomicQueueB2, 1,s:  14,486,763 msg/sec
+                   AtomicQueueB2, 1,i:  14,128,891 msg/sec
+                   AtomicQueueB2, 1,s:   4,408,928 msg/sec
+                   AtomicQueueB2, 1,i:   4,331,050 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,326,878 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,019,347 msg/sec
+            OptimistAtomicQueue2, 1,s:  41,675,887 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,776,788 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,381,767 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,710,042 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,058,002 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,743,394 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000717 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000675 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000667 sec/round-trip
+                pthread_spinlock: 0.000000748 sec/round-trip
+                      std::mutex: 0.000005029 sec/round-trip
+                 tbb::spin_mutex: 0.000000661 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000376 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000352 sec/round-trip
+
+[9/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,588,181 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,632,576 msg/sec
+                  LockFreeQueue2, 1,s:  73,797,252 msg/sec
+                  LockFreeQueue2, 1,i:  71,317,112 msg/sec
+          boost::lockfree::queue, 1,s:   2,301,313 msg/sec
+          boost::lockfree::queue, 1,i:   2,290,422 msg/sec
+                  TicketSpinlock, 1,s:   1,835,375 msg/sec
+                  TicketSpinlock, 1,i:   1,834,241 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   9,403,716 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:  12,027,719 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,752,459 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,666,709 msg/sec
+                pthread_spinlock, 1,s:   3,650,949 msg/sec
+                pthread_spinlock, 1,i:   3,675,277 msg/sec
+                      std::mutex, 1,s:   5,744,123 msg/sec
+                      std::mutex, 1,i:   5,869,901 msg/sec
+                 tbb::spin_mutex, 1,s:  22,718,918 msg/sec
+                 tbb::spin_mutex, 1,i:  22,286,749 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,481,382 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,481,601 msg/sec
+                     AtomicQueue, 1,s:  20,310,416 msg/sec
+                     AtomicQueue, 1,i:  19,719,233 msg/sec
+                     AtomicQueue, 1,s:   4,202,682 msg/sec
+                     AtomicQueue, 1,i:   4,205,979 msg/sec
+                    AtomicQueueB, 1,s:  15,893,162 msg/sec
+                    AtomicQueueB, 1,i:  15,914,089 msg/sec
+                    AtomicQueueB, 1,s:   4,181,758 msg/sec
+                    AtomicQueueB, 1,i:   4,136,014 msg/sec
+             OptimistAtomicQueue, 1,s: 412,219,845 msg/sec
+             OptimistAtomicQueue, 1,i: 371,162,183 msg/sec
+             OptimistAtomicQueue, 1,s:  51,531,463 msg/sec
+             OptimistAtomicQueue, 1,i:  51,630,917 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,862,955 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,870,174 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,691,520 msg/sec
+            OptimistAtomicQueueB, 1,i:  55,062,743 msg/sec
+                    AtomicQueue2, 1,s:  16,963,381 msg/sec
+                    AtomicQueue2, 1,i:  17,402,487 msg/sec
+                    AtomicQueue2, 1,s:   4,970,760 msg/sec
+                    AtomicQueue2, 1,i:   4,978,478 msg/sec
+                   AtomicQueueB2, 1,s:  22,038,057 msg/sec
+                   AtomicQueueB2, 1,i:  14,679,980 msg/sec
+                   AtomicQueueB2, 1,s:   4,322,634 msg/sec
+                   AtomicQueueB2, 1,i:   4,324,134 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,188,752 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,292,042 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,271,979 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,367,768 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,404,699 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,229,324 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,342,226 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,892,872 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000773 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000745 sec/round-trip
+                      std::mutex: 0.000005207 sec/round-trip
+                 tbb::spin_mutex: 0.000000662 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001157 sec/round-trip
+                     AtomicQueue: 0.000000371 sec/round-trip
+                    AtomicQueueB: 0.000000433 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[10/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,558,304 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,454,256 msg/sec
+                  LockFreeQueue2, 1,s:  72,422,990 msg/sec
+                  LockFreeQueue2, 1,i:  68,258,174 msg/sec
+          boost::lockfree::queue, 1,s:   2,278,830 msg/sec
+          boost::lockfree::queue, 1,i:   2,288,506 msg/sec
+                  TicketSpinlock, 1,s:   1,838,032 msg/sec
+                  TicketSpinlock, 1,i:   1,854,250 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,507,740 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,492,362 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,718,951 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,685,561 msg/sec
+                pthread_spinlock, 1,s:   3,605,439 msg/sec
+                pthread_spinlock, 1,i:   3,608,485 msg/sec
+                      std::mutex, 1,s:   5,775,552 msg/sec
+                      std::mutex, 1,i:   5,669,193 msg/sec
+                 tbb::spin_mutex, 1,s:  22,141,862 msg/sec
+                 tbb::spin_mutex, 1,i:  22,049,442 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,465,880 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,466,363 msg/sec
+                     AtomicQueue, 1,s:  20,108,230 msg/sec
+                     AtomicQueue, 1,i:  19,970,208 msg/sec
+                     AtomicQueue, 1,s:   4,215,214 msg/sec
+                     AtomicQueue, 1,i:   4,170,413 msg/sec
+                    AtomicQueueB, 1,s:  15,506,414 msg/sec
+                    AtomicQueueB, 1,i:  15,829,236 msg/sec
+                    AtomicQueueB, 1,s:   4,181,115 msg/sec
+                    AtomicQueueB, 1,i:   4,170,047 msg/sec
+             OptimistAtomicQueue, 1,s: 493,761,325 msg/sec
+             OptimistAtomicQueue, 1,i: 334,420,198 msg/sec
+             OptimistAtomicQueue, 1,s:  52,961,417 msg/sec
+             OptimistAtomicQueue, 1,i:  52,512,954 msg/sec
+            OptimistAtomicQueueB, 1,s:  67,199,017 msg/sec
+            OptimistAtomicQueueB, 1,i:  67,046,552 msg/sec
+            OptimistAtomicQueueB, 1,s:  52,428,707 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,854,514 msg/sec
+                    AtomicQueue2, 1,s:  17,756,195 msg/sec
+                    AtomicQueue2, 1,i:  17,235,311 msg/sec
+                    AtomicQueue2, 1,s:   5,075,138 msg/sec
+                    AtomicQueue2, 1,i:   4,947,789 msg/sec
+                   AtomicQueueB2, 1,s:  14,394,874 msg/sec
+                   AtomicQueueB2, 1,i:  16,111,442 msg/sec
+                   AtomicQueueB2, 1,s:   4,320,178 msg/sec
+                   AtomicQueueB2, 1,i:   4,556,769 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,008,591 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,243,258 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,335,833 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,114,874 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,974,712 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,138,507 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,630,024 msg/sec
+           OptimistAtomicQueueB2, 1,i:  30,045,675 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000773 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000667 sec/round-trip
+                pthread_spinlock: 0.000000748 sec/round-trip
+                      std::mutex: 0.000005752 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000376 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000353 sec/round-trip
+                    AtomicQueue2: 0.000000432 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000353 sec/round-trip
+
+[11/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,493,305 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,736,812 msg/sec
+                  LockFreeQueue2, 1,s:  71,812,769 msg/sec
+                  LockFreeQueue2, 1,i:  70,781,026 msg/sec
+          boost::lockfree::queue, 1,s:   2,301,738 msg/sec
+          boost::lockfree::queue, 1,i:   2,295,625 msg/sec
+                  TicketSpinlock, 1,s:   1,862,831 msg/sec
+                  TicketSpinlock, 1,i:   1,835,275 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,480,424 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,834,425 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,725,789 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,640,623 msg/sec
+                pthread_spinlock, 1,s:   3,616,289 msg/sec
+                pthread_spinlock, 1,i:   3,608,294 msg/sec
+                      std::mutex, 1,s:   5,554,278 msg/sec
+                      std::mutex, 1,i:   5,620,802 msg/sec
+                 tbb::spin_mutex, 1,s:  22,844,412 msg/sec
+                 tbb::spin_mutex, 1,i:  22,162,840 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,461,229 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,459,851 msg/sec
+                     AtomicQueue, 1,s:  20,268,069 msg/sec
+                     AtomicQueue, 1,i:  20,806,505 msg/sec
+                     AtomicQueue, 1,s:   4,201,717 msg/sec
+                     AtomicQueue, 1,i:   4,220,055 msg/sec
+                    AtomicQueueB, 1,s:  15,802,072 msg/sec
+                    AtomicQueueB, 1,i:  16,011,477 msg/sec
+                    AtomicQueueB, 1,s:   4,220,237 msg/sec
+                    AtomicQueueB, 1,i:   4,235,987 msg/sec
+             OptimistAtomicQueue, 1,s: 459,459,583 msg/sec
+             OptimistAtomicQueue, 1,i: 443,050,312 msg/sec
+             OptimistAtomicQueue, 1,s:  53,634,027 msg/sec
+             OptimistAtomicQueue, 1,i:  53,128,385 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,129,758 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,276,201 msg/sec
+            OptimistAtomicQueueB, 1,s:  55,048,012 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,323,265 msg/sec
+                    AtomicQueue2, 1,s:  22,578,205 msg/sec
+                    AtomicQueue2, 1,i:  18,466,535 msg/sec
+                    AtomicQueue2, 1,s:   5,055,811 msg/sec
+                    AtomicQueue2, 1,i:   5,056,935 msg/sec
+                   AtomicQueueB2, 1,s:  19,085,200 msg/sec
+                   AtomicQueueB2, 1,i:  14,168,420 msg/sec
+                   AtomicQueueB2, 1,s:   4,315,667 msg/sec
+                   AtomicQueueB2, 1,i:   4,648,729 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,081,249 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,162,309 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,140,455 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,944,098 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,859,060 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,637,782 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,881,644 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,663,300 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000668 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004489 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001151 sec/round-trip
+                     AtomicQueue: 0.000000378 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000429 sec/round-trip
+                   AtomicQueueB2: 0.000000444 sec/round-trip
+            OptimistAtomicQueue2: 0.000000360 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000358 sec/round-trip
+
+[12/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,599,110 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,288,915 msg/sec
+                  LockFreeQueue2, 1,s:  71,974,653 msg/sec
+                  LockFreeQueue2, 1,i:  67,141,761 msg/sec
+          boost::lockfree::queue, 1,s:   2,292,845 msg/sec
+          boost::lockfree::queue, 1,i:   2,304,331 msg/sec
+                  TicketSpinlock, 1,s:   1,842,861 msg/sec
+                  TicketSpinlock, 1,i:   1,869,844 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,479,147 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,394,165 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,670,997 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,634,551 msg/sec
+                pthread_spinlock, 1,s:   3,632,771 msg/sec
+                pthread_spinlock, 1,i:   3,591,278 msg/sec
+                      std::mutex, 1,s:   5,889,840 msg/sec
+                      std::mutex, 1,i:   5,379,856 msg/sec
+                 tbb::spin_mutex, 1,s:  21,955,593 msg/sec
+                 tbb::spin_mutex, 1,i:  23,561,505 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,461,296 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,465,138 msg/sec
+                     AtomicQueue, 1,s:  20,119,360 msg/sec
+                     AtomicQueue, 1,i:  24,783,202 msg/sec
+                     AtomicQueue, 1,s:   4,209,290 msg/sec
+                     AtomicQueue, 1,i:   4,182,376 msg/sec
+                    AtomicQueueB, 1,s:  15,984,948 msg/sec
+                    AtomicQueueB, 1,i:  15,956,651 msg/sec
+                    AtomicQueueB, 1,s:   4,223,729 msg/sec
+                    AtomicQueueB, 1,i:   4,231,535 msg/sec
+             OptimistAtomicQueue, 1,s: 495,110,781 msg/sec
+             OptimistAtomicQueue, 1,i: 335,703,399 msg/sec
+             OptimistAtomicQueue, 1,s:  51,863,884 msg/sec
+             OptimistAtomicQueue, 1,i:  53,178,392 msg/sec
+            OptimistAtomicQueueB, 1,s:  67,580,901 msg/sec
+            OptimistAtomicQueueB, 1,i:  67,768,583 msg/sec
+            OptimistAtomicQueueB, 1,s:  52,851,748 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,909,363 msg/sec
+                    AtomicQueue2, 1,s:  19,143,335 msg/sec
+                    AtomicQueue2, 1,i:  19,392,179 msg/sec
+                    AtomicQueue2, 1,s:   5,093,087 msg/sec
+                    AtomicQueue2, 1,i:   4,997,778 msg/sec
+                   AtomicQueueB2, 1,s:  17,677,698 msg/sec
+                   AtomicQueueB2, 1,i:  14,139,811 msg/sec
+                   AtomicQueueB2, 1,s:   4,331,602 msg/sec
+                   AtomicQueueB2, 1,i:   4,354,053 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,089,123 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,290,996 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,488,081 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,142,268 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,714,053 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,031,838 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,030,598 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,634,292 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000777 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000667 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004483 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001150 sec/round-trip
+                     AtomicQueue: 0.000000378 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000362 sec/round-trip
+
+[13/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,456,927 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,625,553 msg/sec
+                  LockFreeQueue2, 1,s:  73,012,312 msg/sec
+                  LockFreeQueue2, 1,i:  70,949,610 msg/sec
+          boost::lockfree::queue, 1,s:   2,305,590 msg/sec
+          boost::lockfree::queue, 1,i:   2,302,641 msg/sec
+                  TicketSpinlock, 1,s:   1,841,717 msg/sec
+                  TicketSpinlock, 1,i:   1,838,394 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   8,068,998 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,425,075 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,673,348 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,649,956 msg/sec
+                pthread_spinlock, 1,s:   3,619,025 msg/sec
+                pthread_spinlock, 1,i:   3,595,181 msg/sec
+                      std::mutex, 1,s:   5,403,054 msg/sec
+                      std::mutex, 1,i:   4,817,039 msg/sec
+                 tbb::spin_mutex, 1,s:  22,209,355 msg/sec
+                 tbb::spin_mutex, 1,i:  21,992,212 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,457,705 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,469,043 msg/sec
+                     AtomicQueue, 1,s:  20,580,921 msg/sec
+                     AtomicQueue, 1,i:  27,482,931 msg/sec
+                     AtomicQueue, 1,s:   4,238,481 msg/sec
+                     AtomicQueue, 1,i:   4,190,785 msg/sec
+                    AtomicQueueB, 1,s:  15,933,769 msg/sec
+                    AtomicQueueB, 1,i:  15,944,851 msg/sec
+                    AtomicQueueB, 1,s:   4,245,930 msg/sec
+                    AtomicQueueB, 1,i:   4,241,933 msg/sec
+             OptimistAtomicQueue, 1,s: 441,466,020 msg/sec
+             OptimistAtomicQueue, 1,i: 334,920,858 msg/sec
+             OptimistAtomicQueue, 1,s:  52,950,059 msg/sec
+             OptimistAtomicQueue, 1,i:  53,339,563 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,486,742 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,141,048 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,387,670 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,760,579 msg/sec
+                    AtomicQueue2, 1,s:  20,064,004 msg/sec
+                    AtomicQueue2, 1,i:  17,360,460 msg/sec
+                    AtomicQueue2, 1,s:   5,035,275 msg/sec
+                    AtomicQueue2, 1,i:   5,045,791 msg/sec
+                   AtomicQueueB2, 1,s:  14,329,959 msg/sec
+                   AtomicQueueB2, 1,i:  14,152,677 msg/sec
+                   AtomicQueueB2, 1,s:   4,297,954 msg/sec
+                   AtomicQueueB2, 1,i:   4,575,529 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,142,807 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,083,014 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,577,373 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,470,865 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,808,283 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,896,257 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,946,691 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,807,014 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000672 sec/round-trip
+                pthread_spinlock: 0.000000744 sec/round-trip
+                      std::mutex: 0.000004828 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001145 sec/round-trip
+                     AtomicQueue: 0.000000381 sec/round-trip
+                    AtomicQueueB: 0.000000433 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000348 sec/round-trip
+                    AtomicQueue2: 0.000000432 sec/round-trip
+                   AtomicQueueB2: 0.000000439 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000360 sec/round-trip
+
+[14/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,459,629 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,443,070 msg/sec
+                  LockFreeQueue2, 1,s:  72,166,786 msg/sec
+                  LockFreeQueue2, 1,i:  71,504,059 msg/sec
+          boost::lockfree::queue, 1,s:   2,294,419 msg/sec
+          boost::lockfree::queue, 1,i:   2,292,484 msg/sec
+                  TicketSpinlock, 1,s:   1,846,904 msg/sec
+                  TicketSpinlock, 1,i:   1,835,454 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,853,698 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,397,296 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,744,176 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,707,942 msg/sec
+                pthread_spinlock, 1,s:   3,667,641 msg/sec
+                pthread_spinlock, 1,i:   3,648,235 msg/sec
+                      std::mutex, 1,s:   5,604,500 msg/sec
+                      std::mutex, 1,i:   5,865,649 msg/sec
+                 tbb::spin_mutex, 1,s:  23,228,997 msg/sec
+                 tbb::spin_mutex, 1,i:  23,735,367 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,458,579 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,457,950 msg/sec
+                     AtomicQueue, 1,s:  20,233,302 msg/sec
+                     AtomicQueue, 1,i:  20,483,299 msg/sec
+                     AtomicQueue, 1,s:   4,158,948 msg/sec
+                     AtomicQueue, 1,i:   4,155,273 msg/sec
+                    AtomicQueueB, 1,s:  16,064,891 msg/sec
+                    AtomicQueueB, 1,i:  15,503,061 msg/sec
+                    AtomicQueueB, 1,s:   4,249,644 msg/sec
+                    AtomicQueueB, 1,i:   4,162,332 msg/sec
+             OptimistAtomicQueue, 1,s: 471,322,389 msg/sec
+             OptimistAtomicQueue, 1,i: 335,916,531 msg/sec
+             OptimistAtomicQueue, 1,s:  52,414,857 msg/sec
+             OptimistAtomicQueue, 1,i:  52,858,704 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,121,553 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,309,343 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,806,138 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,820,820 msg/sec
+                    AtomicQueue2, 1,s:  15,936,359 msg/sec
+                    AtomicQueue2, 1,i:  17,409,485 msg/sec
+                    AtomicQueue2, 1,s:   4,996,030 msg/sec
+                    AtomicQueue2, 1,i:   4,964,762 msg/sec
+                   AtomicQueueB2, 1,s:  14,297,916 msg/sec
+                   AtomicQueueB2, 1,i:  14,171,088 msg/sec
+                   AtomicQueueB2, 1,s:   4,411,978 msg/sec
+                   AtomicQueueB2, 1,i:   4,385,760 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,153,032 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,210,229 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,738,362 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,304,491 msg/sec
+           OptimistAtomicQueueB2, 1,s:  51,104,130 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,620,557 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,878,644 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,835,427 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000777 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004855 sec/round-trip
+                 tbb::spin_mutex: 0.000000662 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001146 sec/round-trip
+                     AtomicQueue: 0.000000372 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000441 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000351 sec/round-trip
+
+[15/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,549,135 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,351,362 msg/sec
+                  LockFreeQueue2, 1,s:  71,668,558 msg/sec
+                  LockFreeQueue2, 1,i:  71,183,851 msg/sec
+          boost::lockfree::queue, 1,s:   2,301,169 msg/sec
+          boost::lockfree::queue, 1,i:   2,294,488 msg/sec
+                  TicketSpinlock, 1,s:   1,857,792 msg/sec
+                  TicketSpinlock, 1,i:   1,849,101 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,516,661 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,390,311 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,782,316 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,722,641 msg/sec
+                pthread_spinlock, 1,s:   3,678,826 msg/sec
+                pthread_spinlock, 1,i:   3,666,411 msg/sec
+                      std::mutex, 1,s:   5,673,992 msg/sec
+                      std::mutex, 1,i:   5,480,495 msg/sec
+                 tbb::spin_mutex, 1,s:  22,609,216 msg/sec
+                 tbb::spin_mutex, 1,i:  22,487,666 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,455,158 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,461,943 msg/sec
+                     AtomicQueue, 1,s:  20,198,665 msg/sec
+                     AtomicQueue, 1,i:  20,839,806 msg/sec
+                     AtomicQueue, 1,s:   4,245,491 msg/sec
+                     AtomicQueue, 1,i:   4,185,703 msg/sec
+                    AtomicQueueB, 1,s:  16,031,614 msg/sec
+                    AtomicQueueB, 1,i:  16,041,922 msg/sec
+                    AtomicQueueB, 1,s:   4,197,583 msg/sec
+                    AtomicQueueB, 1,i:   4,186,321 msg/sec
+             OptimistAtomicQueue, 1,s: 474,266,310 msg/sec
+             OptimistAtomicQueue, 1,i: 334,487,314 msg/sec
+             OptimistAtomicQueue, 1,s:  52,340,209 msg/sec
+             OptimistAtomicQueue, 1,i:  52,329,609 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,995,122 msg/sec
+            OptimistAtomicQueueB, 1,i:  62,607,567 msg/sec
+            OptimistAtomicQueueB, 1,s:  55,758,423 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,128,195 msg/sec
+                    AtomicQueue2, 1,s:  16,301,058 msg/sec
+                    AtomicQueue2, 1,i:  14,873,409 msg/sec
+                    AtomicQueue2, 1,s:   4,921,980 msg/sec
+                    AtomicQueue2, 1,i:   5,062,307 msg/sec
+                   AtomicQueueB2, 1,s:  14,610,892 msg/sec
+                   AtomicQueueB2, 1,i:  18,772,859 msg/sec
+                   AtomicQueueB2, 1,s:   4,322,517 msg/sec
+                   AtomicQueueB2, 1,i:   4,325,264 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,188,916 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,186,100 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,325,301 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,604,792 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,728,795 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,422,617 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,901,534 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,715,765 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000394 sec/round-trip
+          boost::lockfree::queue: 0.000000786 sec/round-trip
+                  TicketSpinlock: 0.000000719 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004627 sec/round-trip
+                 tbb::spin_mutex: 0.000000660 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001152 sec/round-trip
+                     AtomicQueue: 0.000000381 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000355 sec/round-trip
+
+[16/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,766,392 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,515,488 msg/sec
+                  LockFreeQueue2, 1,s:  71,948,553 msg/sec
+                  LockFreeQueue2, 1,i:  70,980,431 msg/sec
+          boost::lockfree::queue, 1,s:   2,296,323 msg/sec
+          boost::lockfree::queue, 1,i:   2,309,517 msg/sec
+                  TicketSpinlock, 1,s:   1,840,163 msg/sec
+                  TicketSpinlock, 1,i:   1,857,558 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,510,056 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,493,221 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,732,351 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,677,857 msg/sec
+                pthread_spinlock, 1,s:   3,680,099 msg/sec
+                pthread_spinlock, 1,i:   3,663,016 msg/sec
+                      std::mutex, 1,s:   5,916,010 msg/sec
+                      std::mutex, 1,i:   5,647,475 msg/sec
+                 tbb::spin_mutex, 1,s:  23,775,880 msg/sec
+                 tbb::spin_mutex, 1,i:  23,692,718 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,465,570 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,463,335 msg/sec
+                     AtomicQueue, 1,s:  20,094,593 msg/sec
+                     AtomicQueue, 1,i:  19,763,017 msg/sec
+                     AtomicQueue, 1,s:   4,252,604 msg/sec
+                     AtomicQueue, 1,i:   4,233,862 msg/sec
+                    AtomicQueueB, 1,s:  15,833,815 msg/sec
+                    AtomicQueueB, 1,i:  16,165,009 msg/sec
+                    AtomicQueueB, 1,s:   4,201,488 msg/sec
+                    AtomicQueueB, 1,i:   4,161,812 msg/sec
+             OptimistAtomicQueue, 1,s: 452,326,996 msg/sec
+             OptimistAtomicQueue, 1,i: 334,732,515 msg/sec
+             OptimistAtomicQueue, 1,s:  52,272,166 msg/sec
+             OptimistAtomicQueue, 1,i:  53,612,633 msg/sec
+            OptimistAtomicQueueB, 1,s:  65,463,962 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,329,573 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,139,311 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,151,145 msg/sec
+                    AtomicQueue2, 1,s:  18,844,986 msg/sec
+                    AtomicQueue2, 1,i:  20,670,898 msg/sec
+                    AtomicQueue2, 1,s:   5,039,080 msg/sec
+                    AtomicQueue2, 1,i:   4,969,997 msg/sec
+                   AtomicQueueB2, 1,s:  14,288,061 msg/sec
+                   AtomicQueueB2, 1,i:  14,517,686 msg/sec
+                   AtomicQueueB2, 1,s:   4,309,638 msg/sec
+                   AtomicQueueB2, 1,i:   4,326,612 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,049,792 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,296,833 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,495,653 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,346,738 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,151,708 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,906,129 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,881,617 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,650,266 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000672 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000668 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000005131 sec/round-trip
+                 tbb::spin_mutex: 0.000000671 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001151 sec/round-trip
+                     AtomicQueue: 0.000000376 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000343 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000357 sec/round-trip
+
+[17/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,575,494 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,320,696 msg/sec
+                  LockFreeQueue2, 1,s:  72,255,013 msg/sec
+                  LockFreeQueue2, 1,i:  70,789,894 msg/sec
+          boost::lockfree::queue, 1,s:   2,314,147 msg/sec
+          boost::lockfree::queue, 1,i:   2,291,561 msg/sec
+                  TicketSpinlock, 1,s:   1,840,047 msg/sec
+                  TicketSpinlock, 1,i:   1,833,766 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,768,629 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,837,912 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,714,078 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,642,515 msg/sec
+                pthread_spinlock, 1,s:   3,647,771 msg/sec
+                pthread_spinlock, 1,i:   3,653,129 msg/sec
+                      std::mutex, 1,s:   5,695,767 msg/sec
+                      std::mutex, 1,i:   5,698,139 msg/sec
+                 tbb::spin_mutex, 1,s:  23,080,253 msg/sec
+                 tbb::spin_mutex, 1,i:  21,164,504 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,466,383 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,453,792 msg/sec
+                     AtomicQueue, 1,s:  21,207,688 msg/sec
+                     AtomicQueue, 1,i:  20,488,914 msg/sec
+                     AtomicQueue, 1,s:   4,214,332 msg/sec
+                     AtomicQueue, 1,i:   4,213,558 msg/sec
+                    AtomicQueueB, 1,s:  16,047,683 msg/sec
+                    AtomicQueueB, 1,i:  15,648,813 msg/sec
+                    AtomicQueueB, 1,s:   4,398,102 msg/sec
+                    AtomicQueueB, 1,i:   4,195,011 msg/sec
+             OptimistAtomicQueue, 1,s: 442,638,479 msg/sec
+             OptimistAtomicQueue, 1,i: 335,608,760 msg/sec
+             OptimistAtomicQueue, 1,s:  52,219,512 msg/sec
+             OptimistAtomicQueue, 1,i:  52,865,914 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,462,064 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,096,777 msg/sec
+            OptimistAtomicQueueB, 1,s:  52,991,053 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,097,097 msg/sec
+                    AtomicQueue2, 1,s:  18,131,797 msg/sec
+                    AtomicQueue2, 1,i:  16,088,595 msg/sec
+                    AtomicQueue2, 1,s:   4,944,512 msg/sec
+                    AtomicQueue2, 1,i:   4,989,179 msg/sec
+                   AtomicQueueB2, 1,s:  20,484,104 msg/sec
+                   AtomicQueueB2, 1,i:  14,122,606 msg/sec
+                   AtomicQueueB2, 1,s:   4,639,105 msg/sec
+                   AtomicQueueB2, 1,i:   4,486,752 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,185,662 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,297,769 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,836,172 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,206,881 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,623,709 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,989,996 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,825,843 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,755,395 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000491 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000774 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000745 sec/round-trip
+                      std::mutex: 0.000004538 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001148 sec/round-trip
+                     AtomicQueue: 0.000000372 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000343 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000363 sec/round-trip
+
+[18/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,734,063 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,813,567 msg/sec
+                  LockFreeQueue2, 1,s:  72,661,375 msg/sec
+                  LockFreeQueue2, 1,i:  69,389,222 msg/sec
+          boost::lockfree::queue, 1,s:   2,293,701 msg/sec
+          boost::lockfree::queue, 1,i:   2,285,436 msg/sec
+                  TicketSpinlock, 1,s:   1,814,610 msg/sec
+                  TicketSpinlock, 1,i:   1,833,018 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,515,654 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,496,003 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,679,688 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,647,310 msg/sec
+                pthread_spinlock, 1,s:   3,632,641 msg/sec
+                pthread_spinlock, 1,i:   3,593,563 msg/sec
+                      std::mutex, 1,s:   5,472,073 msg/sec
+                      std::mutex, 1,i:   5,452,055 msg/sec
+                 tbb::spin_mutex, 1,s:  22,937,489 msg/sec
+                 tbb::spin_mutex, 1,i:  21,728,719 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,454,816 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,467,551 msg/sec
+                     AtomicQueue, 1,s:  24,473,309 msg/sec
+                     AtomicQueue, 1,i:  32,544,392 msg/sec
+                     AtomicQueue, 1,s:   4,241,409 msg/sec
+                     AtomicQueue, 1,i:   4,231,097 msg/sec
+                    AtomicQueueB, 1,s:  18,483,102 msg/sec
+                    AtomicQueueB, 1,i:  16,030,681 msg/sec
+                    AtomicQueueB, 1,s:   4,205,574 msg/sec
+                    AtomicQueueB, 1,i:   4,224,197 msg/sec
+             OptimistAtomicQueue, 1,s: 479,540,408 msg/sec
+             OptimistAtomicQueue, 1,i: 334,830,023 msg/sec
+             OptimistAtomicQueue, 1,s:  52,491,289 msg/sec
+             OptimistAtomicQueue, 1,i:  52,709,089 msg/sec
+            OptimistAtomicQueueB, 1,s:  66,722,980 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,400,284 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,597,639 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,380,735 msg/sec
+                    AtomicQueue2, 1,s:  16,589,360 msg/sec
+                    AtomicQueue2, 1,i:  16,664,583 msg/sec
+                    AtomicQueue2, 1,s:   4,980,364 msg/sec
+                    AtomicQueue2, 1,i:   4,980,000 msg/sec
+                   AtomicQueueB2, 1,s:  14,297,536 msg/sec
+                   AtomicQueueB2, 1,i:  14,738,463 msg/sec
+                   AtomicQueueB2, 1,s:   4,510,491 msg/sec
+                   AtomicQueueB2, 1,i:   4,544,221 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,246,551 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,123,358 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,829,579 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,137,095 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,937,400 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,177,963 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,745,677 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,992,498 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000670 sec/round-trip
+                pthread_spinlock: 0.000000748 sec/round-trip
+                      std::mutex: 0.000004461 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001148 sec/round-trip
+                     AtomicQueue: 0.000000377 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000353 sec/round-trip
+                    AtomicQueue2: 0.000000433 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[19/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,186,720 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,451,169 msg/sec
+                  LockFreeQueue2, 1,s:  72,632,876 msg/sec
+                  LockFreeQueue2, 1,i:  70,997,968 msg/sec
+          boost::lockfree::queue, 1,s:   2,287,832 msg/sec
+          boost::lockfree::queue, 1,i:   2,283,996 msg/sec
+                  TicketSpinlock, 1,s:   1,852,474 msg/sec
+                  TicketSpinlock, 1,i:   1,863,760 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,555,740 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,901,468 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,721,455 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,633,107 msg/sec
+                pthread_spinlock, 1,s:   3,646,167 msg/sec
+                pthread_spinlock, 1,i:   3,653,695 msg/sec
+                      std::mutex, 1,s:   6,102,141 msg/sec
+                      std::mutex, 1,i:   5,874,155 msg/sec
+                 tbb::spin_mutex, 1,s:  22,098,602 msg/sec
+                 tbb::spin_mutex, 1,i:  22,087,532 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,423,645 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,429,613 msg/sec
+                     AtomicQueue, 1,s:  26,625,088 msg/sec
+                     AtomicQueue, 1,i:  20,318,091 msg/sec
+                     AtomicQueue, 1,s:   4,231,596 msg/sec
+                     AtomicQueue, 1,i:   4,195,358 msg/sec
+                    AtomicQueueB, 1,s:  15,824,600 msg/sec
+                    AtomicQueueB, 1,i:  16,127,664 msg/sec
+                    AtomicQueueB, 1,s:   4,247,381 msg/sec
+                    AtomicQueueB, 1,i:   4,204,974 msg/sec
+             OptimistAtomicQueue, 1,s: 475,572,232 msg/sec
+             OptimistAtomicQueue, 1,i: 346,201,648 msg/sec
+             OptimistAtomicQueue, 1,s:  53,117,379 msg/sec
+             OptimistAtomicQueue, 1,i:  53,180,174 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,539,142 msg/sec
+            OptimistAtomicQueueB, 1,i:  67,846,793 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,466,408 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,618,842 msg/sec
+                    AtomicQueue2, 1,s:  15,809,746 msg/sec
+                    AtomicQueue2, 1,i:  17,166,901 msg/sec
+                    AtomicQueue2, 1,s:   5,074,678 msg/sec
+                    AtomicQueue2, 1,i:   4,994,039 msg/sec
+                   AtomicQueueB2, 1,s:  14,360,691 msg/sec
+                   AtomicQueueB2, 1,i:  20,681,081 msg/sec
+                   AtomicQueueB2, 1,s:   4,332,290 msg/sec
+                   AtomicQueueB2, 1,i:   4,336,257 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,113,642 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,079,403 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,970,899 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,779,492 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,462,539 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,729,953 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,740,953 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,354,919 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000777 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000005947 sec/round-trip
+                 tbb::spin_mutex: 0.000000662 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000380 sec/round-trip
+                    AtomicQueueB: 0.000000433 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000356 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000358 sec/round-trip
+
+[20/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,489,051 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,621,743 msg/sec
+                  LockFreeQueue2, 1,s:  72,910,264 msg/sec
+                  LockFreeQueue2, 1,i:  68,356,718 msg/sec
+          boost::lockfree::queue, 1,s:   2,295,929 msg/sec
+          boost::lockfree::queue, 1,i:   2,286,984 msg/sec
+                  TicketSpinlock, 1,s:   1,882,253 msg/sec
+                  TicketSpinlock, 1,i:   1,842,340 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,908,579 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,499,821 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,708,164 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,639,025 msg/sec
+                pthread_spinlock, 1,s:   3,651,395 msg/sec
+                pthread_spinlock, 1,i:   3,683,998 msg/sec
+                      std::mutex, 1,s:   5,906,061 msg/sec
+                      std::mutex, 1,i:   5,984,077 msg/sec
+                 tbb::spin_mutex, 1,s:  22,411,555 msg/sec
+                 tbb::spin_mutex, 1,i:  20,984,090 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,460,383 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,466,099 msg/sec
+                     AtomicQueue, 1,s:  20,437,146 msg/sec
+                     AtomicQueue, 1,i:  20,031,581 msg/sec
+                     AtomicQueue, 1,s:   4,225,953 msg/sec
+                     AtomicQueue, 1,i:   4,212,918 msg/sec
+                    AtomicQueueB, 1,s:  15,961,167 msg/sec
+                    AtomicQueueB, 1,i:  15,858,478 msg/sec
+                    AtomicQueueB, 1,s:   4,284,151 msg/sec
+                    AtomicQueueB, 1,i:   4,181,430 msg/sec
+             OptimistAtomicQueue, 1,s: 496,719,169 msg/sec
+             OptimistAtomicQueue, 1,i: 332,900,562 msg/sec
+             OptimistAtomicQueue, 1,s:  53,761,359 msg/sec
+             OptimistAtomicQueue, 1,i:  52,970,169 msg/sec
+            OptimistAtomicQueueB, 1,s:  68,774,608 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,257,028 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,206,149 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,561,806 msg/sec
+                    AtomicQueue2, 1,s:  17,126,707 msg/sec
+                    AtomicQueue2, 1,i:  17,261,006 msg/sec
+                    AtomicQueue2, 1,s:   4,879,560 msg/sec
+                    AtomicQueue2, 1,i:   4,973,285 msg/sec
+                   AtomicQueueB2, 1,s:  14,222,246 msg/sec
+                   AtomicQueueB2, 1,i:  20,536,782 msg/sec
+                   AtomicQueueB2, 1,s:   4,455,768 msg/sec
+                   AtomicQueueB2, 1,i:   4,435,055 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,194,440 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,162,500 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,513,670 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,922,499 msg/sec
+           OptimistAtomicQueueB2, 1,s:  49,980,932 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,185,913 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,859,882 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,612,388 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000670 sec/round-trip
+                pthread_spinlock: 0.000000745 sec/round-trip
+                      std::mutex: 0.000004594 sec/round-trip
+                 tbb::spin_mutex: 0.000000665 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000383 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000356 sec/round-trip
+
+[21/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,663,104 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,487,385 msg/sec
+                  LockFreeQueue2, 1,s:  72,003,104 msg/sec
+                  LockFreeQueue2, 1,i:  70,387,341 msg/sec
+          boost::lockfree::queue, 1,s:   2,287,061 msg/sec
+          boost::lockfree::queue, 1,i:   2,282,465 msg/sec
+                  TicketSpinlock, 1,s:   1,838,842 msg/sec
+                  TicketSpinlock, 1,i:   1,832,674 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,530,865 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,491,485 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,724,600 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,674,294 msg/sec
+                pthread_spinlock, 1,s:   3,669,037 msg/sec
+                pthread_spinlock, 1,i:   3,626,380 msg/sec
+                      std::mutex, 1,s:   5,802,709 msg/sec
+                      std::mutex, 1,i:   5,754,497 msg/sec
+                 tbb::spin_mutex, 1,s:  22,498,564 msg/sec
+                 tbb::spin_mutex, 1,i:  22,612,529 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,470,552 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,475,687 msg/sec
+                     AtomicQueue, 1,s:  19,845,380 msg/sec
+                     AtomicQueue, 1,i:  20,690,003 msg/sec
+                     AtomicQueue, 1,s:   4,239,943 msg/sec
+                     AtomicQueue, 1,i:   4,189,693 msg/sec
+                    AtomicQueueB, 1,s:  16,059,489 msg/sec
+                    AtomicQueueB, 1,i:  15,819,756 msg/sec
+                    AtomicQueueB, 1,s:   4,346,321 msg/sec
+                    AtomicQueueB, 1,i:   4,188,907 msg/sec
+             OptimistAtomicQueue, 1,s: 444,379,268 msg/sec
+             OptimistAtomicQueue, 1,i: 335,794,708 msg/sec
+             OptimistAtomicQueue, 1,s:  53,105,193 msg/sec
+             OptimistAtomicQueue, 1,i:  52,803,691 msg/sec
+            OptimistAtomicQueueB, 1,s:  68,835,252 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,397,751 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,264,247 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,957,344 msg/sec
+                    AtomicQueue2, 1,s:  17,340,104 msg/sec
+                    AtomicQueue2, 1,i:  17,087,953 msg/sec
+                    AtomicQueue2, 1,s:   5,034,642 msg/sec
+                    AtomicQueue2, 1,i:   4,996,158 msg/sec
+                   AtomicQueueB2, 1,s:  14,345,944 msg/sec
+                   AtomicQueueB2, 1,i:  14,040,550 msg/sec
+                   AtomicQueueB2, 1,s:   5,134,395 msg/sec
+                   AtomicQueueB2, 1,i:   5,147,672 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,660,391 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,649,480 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,780,451 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,987,394 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,137,527 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,152,237 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,605,077 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,735,912 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000778 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000677 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000670 sec/round-trip
+                pthread_spinlock: 0.000000749 sec/round-trip
+                      std::mutex: 0.000004429 sec/round-trip
+                 tbb::spin_mutex: 0.000000667 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001152 sec/round-trip
+                     AtomicQueue: 0.000000385 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000373 sec/round-trip
+            OptimistAtomicQueueB: 0.000000355 sec/round-trip
+                    AtomicQueue2: 0.000000433 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000362 sec/round-trip
+
+[22/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,585,756 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,060,974 msg/sec
+                  LockFreeQueue2, 1,s:  71,946,379 msg/sec
+                  LockFreeQueue2, 1,i:  70,892,120 msg/sec
+          boost::lockfree::queue, 1,s:   2,303,979 msg/sec
+          boost::lockfree::queue, 1,i:   2,307,981 msg/sec
+                  TicketSpinlock, 1,s:   1,846,137 msg/sec
+                  TicketSpinlock, 1,i:   1,833,349 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,489,108 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,466,475 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,731,145 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,658,267 msg/sec
+                pthread_spinlock, 1,s:   3,687,449 msg/sec
+                pthread_spinlock, 1,i:   3,599,268 msg/sec
+                      std::mutex, 1,s:   5,680,581 msg/sec
+                      std::mutex, 1,i:   5,803,588 msg/sec
+                 tbb::spin_mutex, 1,s:  23,498,785 msg/sec
+                 tbb::spin_mutex, 1,i:  21,860,245 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,416,503 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,378,626 msg/sec
+                     AtomicQueue, 1,s:  24,404,773 msg/sec
+                     AtomicQueue, 1,i:  24,795,038 msg/sec
+                     AtomicQueue, 1,s:   4,148,330 msg/sec
+                     AtomicQueue, 1,i:   4,208,494 msg/sec
+                    AtomicQueueB, 1,s:  15,837,043 msg/sec
+                    AtomicQueueB, 1,i:  15,983,745 msg/sec
+                    AtomicQueueB, 1,s:   4,303,668 msg/sec
+                    AtomicQueueB, 1,i:   4,171,573 msg/sec
+             OptimistAtomicQueue, 1,s: 458,865,043 msg/sec
+             OptimistAtomicQueue, 1,i: 334,685,462 msg/sec
+             OptimistAtomicQueue, 1,s:  52,562,887 msg/sec
+             OptimistAtomicQueue, 1,i:  52,232,031 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,967,759 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,467,160 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,437,944 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,445,783 msg/sec
+                    AtomicQueue2, 1,s:  16,624,888 msg/sec
+                    AtomicQueue2, 1,i:  16,575,509 msg/sec
+                    AtomicQueue2, 1,s:   5,020,194 msg/sec
+                    AtomicQueue2, 1,i:   4,728,906 msg/sec
+                   AtomicQueueB2, 1,s:  14,652,942 msg/sec
+                   AtomicQueueB2, 1,i:  14,168,859 msg/sec
+                   AtomicQueueB2, 1,s:   4,356,775 msg/sec
+                   AtomicQueueB2, 1,i:   4,528,399 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,131,064 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,185,553 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,179,050 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,847,304 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,327,227 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,724,935 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,609,784 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,711,157 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000493 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000745 sec/round-trip
+                      std::mutex: 0.000005654 sec/round-trip
+                 tbb::spin_mutex: 0.000000660 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001146 sec/round-trip
+                     AtomicQueue: 0.000000374 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000342 sec/round-trip
+                    AtomicQueue2: 0.000000428 sec/round-trip
+                   AtomicQueueB2: 0.000000439 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000357 sec/round-trip
+
+[23/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,654,805 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,641,704 msg/sec
+                  LockFreeQueue2, 1,s:  72,433,062 msg/sec
+                  LockFreeQueue2, 1,i:  68,516,333 msg/sec
+          boost::lockfree::queue, 1,s:   2,308,497 msg/sec
+          boost::lockfree::queue, 1,i:   2,293,179 msg/sec
+                  TicketSpinlock, 1,s:   1,853,882 msg/sec
+                  TicketSpinlock, 1,i:   1,834,133 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,539,042 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,486,989 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,719,807 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,675,414 msg/sec
+                pthread_spinlock, 1,s:   3,649,182 msg/sec
+                pthread_spinlock, 1,i:   3,663,008 msg/sec
+                      std::mutex, 1,s:   5,863,751 msg/sec
+                      std::mutex, 1,i:   4,293,483 msg/sec
+                 tbb::spin_mutex, 1,s:  22,650,528 msg/sec
+                 tbb::spin_mutex, 1,i:  21,791,691 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,465,121 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,460,524 msg/sec
+                     AtomicQueue, 1,s:  19,827,803 msg/sec
+                     AtomicQueue, 1,i:  20,450,449 msg/sec
+                     AtomicQueue, 1,s:   4,221,792 msg/sec
+                     AtomicQueue, 1,i:   4,194,538 msg/sec
+                    AtomicQueueB, 1,s:  15,622,454 msg/sec
+                    AtomicQueueB, 1,i:  15,849,543 msg/sec
+                    AtomicQueueB, 1,s:   4,249,885 msg/sec
+                    AtomicQueueB, 1,i:   4,157,959 msg/sec
+             OptimistAtomicQueue, 1,s: 422,443,582 msg/sec
+             OptimistAtomicQueue, 1,i: 382,513,034 msg/sec
+             OptimistAtomicQueue, 1,s:  51,696,979 msg/sec
+             OptimistAtomicQueue, 1,i:  52,452,550 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,471,873 msg/sec
+            OptimistAtomicQueueB, 1,i:  63,177,858 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,772,547 msg/sec
+            OptimistAtomicQueueB, 1,i:  51,696,658 msg/sec
+                    AtomicQueue2, 1,s:  15,050,206 msg/sec
+                    AtomicQueue2, 1,i:  15,242,819 msg/sec
+                    AtomicQueue2, 1,s:   4,978,387 msg/sec
+                    AtomicQueue2, 1,i:   4,972,477 msg/sec
+                   AtomicQueueB2, 1,s:  16,617,304 msg/sec
+                   AtomicQueueB2, 1,i:  21,402,519 msg/sec
+                   AtomicQueueB2, 1,s:   4,329,750 msg/sec
+                   AtomicQueueB2, 1,i:   5,023,691 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,382,715 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,380,805 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,306,088 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,035,157 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,779,567 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,077,043 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,739,971 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,658,259 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000778 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000675 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000667 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004952 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001146 sec/round-trip
+                     AtomicQueue: 0.000000371 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000429 sec/round-trip
+                   AtomicQueueB2: 0.000000439 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000362 sec/round-trip
+
+[24/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,662,713 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,733,700 msg/sec
+                  LockFreeQueue2, 1,s:  72,507,903 msg/sec
+                  LockFreeQueue2, 1,i:  68,057,350 msg/sec
+          boost::lockfree::queue, 1,s:   2,316,703 msg/sec
+          boost::lockfree::queue, 1,i:   2,321,766 msg/sec
+                  TicketSpinlock, 1,s:   1,836,569 msg/sec
+                  TicketSpinlock, 1,i:   1,858,074 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  11,917,944 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,525,995 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,705,773 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,698,445 msg/sec
+                pthread_spinlock, 1,s:   3,665,242 msg/sec
+                pthread_spinlock, 1,i:   3,673,706 msg/sec
+                      std::mutex, 1,s:   5,853,491 msg/sec
+                      std::mutex, 1,i:   5,625,505 msg/sec
+                 tbb::spin_mutex, 1,s:  21,935,250 msg/sec
+                 tbb::spin_mutex, 1,i:  22,109,068 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,462,765 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,464,877 msg/sec
+                     AtomicQueue, 1,s:  20,218,660 msg/sec
+                     AtomicQueue, 1,i:  26,750,534 msg/sec
+                     AtomicQueue, 1,s:   4,207,735 msg/sec
+                     AtomicQueue, 1,i:   4,216,192 msg/sec
+                    AtomicQueueB, 1,s:  15,756,671 msg/sec
+                    AtomicQueueB, 1,i:  15,831,822 msg/sec
+                    AtomicQueueB, 1,s:   4,247,919 msg/sec
+                    AtomicQueueB, 1,i:   4,267,550 msg/sec
+             OptimistAtomicQueue, 1,s: 444,130,592 msg/sec
+             OptimistAtomicQueue, 1,i: 426,077,656 msg/sec
+             OptimistAtomicQueue, 1,s:  52,359,612 msg/sec
+             OptimistAtomicQueue, 1,i:  52,122,506 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,877,980 msg/sec
+            OptimistAtomicQueueB, 1,i:  67,677,360 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,922,686 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,307,213 msg/sec
+                    AtomicQueue2, 1,s:  15,956,437 msg/sec
+                    AtomicQueue2, 1,i:  15,201,119 msg/sec
+                    AtomicQueue2, 1,s:   5,020,793 msg/sec
+                    AtomicQueue2, 1,i:   5,021,777 msg/sec
+                   AtomicQueueB2, 1,s:  14,367,617 msg/sec
+                   AtomicQueueB2, 1,i:  14,140,771 msg/sec
+                   AtomicQueueB2, 1,s:   4,375,724 msg/sec
+                   AtomicQueueB2, 1,i:   4,647,157 msg/sec
+            OptimistAtomicQueue2, 1,s:  29,963,112 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,138,201 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,743,622 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,114,742 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,486,615 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,402,870 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,005,241 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,718,044 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000774 sec/round-trip
+                  TicketSpinlock: 0.000000714 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004894 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000384 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000374 sec/round-trip
+            OptimistAtomicQueueB: 0.000000355 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000441 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000355 sec/round-trip
+
+[25/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,737,719 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,729,743 msg/sec
+                  LockFreeQueue2, 1,s:  72,571,679 msg/sec
+                  LockFreeQueue2, 1,i:  71,336,496 msg/sec
+          boost::lockfree::queue, 1,s:   2,297,938 msg/sec
+          boost::lockfree::queue, 1,i:   2,279,894 msg/sec
+                  TicketSpinlock, 1,s:   1,852,766 msg/sec
+                  TicketSpinlock, 1,i:   1,833,036 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,475,054 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,439,924 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,768,817 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,742,945 msg/sec
+                pthread_spinlock, 1,s:   3,642,088 msg/sec
+                pthread_spinlock, 1,i:   3,628,904 msg/sec
+                      std::mutex, 1,s:   5,724,875 msg/sec
+                      std::mutex, 1,i:   5,105,041 msg/sec
+                 tbb::spin_mutex, 1,s:  23,310,610 msg/sec
+                 tbb::spin_mutex, 1,i:  22,472,490 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,466,465 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,471,891 msg/sec
+                     AtomicQueue, 1,s:  19,698,595 msg/sec
+                     AtomicQueue, 1,i:  21,317,875 msg/sec
+                     AtomicQueue, 1,s:   4,240,823 msg/sec
+                     AtomicQueue, 1,i:   4,208,330 msg/sec
+                    AtomicQueueB, 1,s:  15,919,363 msg/sec
+                    AtomicQueueB, 1,i:  15,719,992 msg/sec
+                    AtomicQueueB, 1,s:   4,235,235 msg/sec
+                    AtomicQueueB, 1,i:   4,178,248 msg/sec
+             OptimistAtomicQueue, 1,s: 457,485,840 msg/sec
+             OptimistAtomicQueue, 1,i: 334,601,472 msg/sec
+             OptimistAtomicQueue, 1,s:  53,157,615 msg/sec
+             OptimistAtomicQueue, 1,i:  53,117,294 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,775,985 msg/sec
+            OptimistAtomicQueueB, 1,i:  62,566,437 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,478,624 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,261,862 msg/sec
+                    AtomicQueue2, 1,s:  16,409,892 msg/sec
+                    AtomicQueue2, 1,i:  16,048,224 msg/sec
+                    AtomicQueue2, 1,s:   4,898,082 msg/sec
+                    AtomicQueue2, 1,i:   4,941,652 msg/sec
+                   AtomicQueueB2, 1,s:  14,459,145 msg/sec
+                   AtomicQueueB2, 1,i:  14,239,610 msg/sec
+                   AtomicQueueB2, 1,s:   4,396,964 msg/sec
+                   AtomicQueueB2, 1,i:   4,551,920 msg/sec
+            OptimistAtomicQueue2, 1,s:  29,982,975 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,206,506 msg/sec
+            OptimistAtomicQueue2, 1,s:  32,912,546 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,955,335 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,849,595 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,709,347 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,634,766 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,709,753 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000489 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000675 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004510 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000390 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000340 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000441 sec/round-trip
+            OptimistAtomicQueue2: 0.000000342 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[26/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,701,136 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,869,716 msg/sec
+                  LockFreeQueue2, 1,s:  72,259,086 msg/sec
+                  LockFreeQueue2, 1,i:  68,261,948 msg/sec
+          boost::lockfree::queue, 1,s:   2,306,120 msg/sec
+          boost::lockfree::queue, 1,i:   2,290,288 msg/sec
+                  TicketSpinlock, 1,s:   1,844,217 msg/sec
+                  TicketSpinlock, 1,i:   1,845,375 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,743,198 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,495,539 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,773,987 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,657,445 msg/sec
+                pthread_spinlock, 1,s:   3,610,219 msg/sec
+                pthread_spinlock, 1,i:   3,580,115 msg/sec
+                      std::mutex, 1,s:   5,889,971 msg/sec
+                      std::mutex, 1,i:   5,869,685 msg/sec
+                 tbb::spin_mutex, 1,s:  22,455,459 msg/sec
+                 tbb::spin_mutex, 1,i:  22,229,009 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,458,177 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,472,097 msg/sec
+                     AtomicQueue, 1,s:  19,798,443 msg/sec
+                     AtomicQueue, 1,i:  25,122,042 msg/sec
+                     AtomicQueue, 1,s:   4,234,072 msg/sec
+                     AtomicQueue, 1,i:   4,227,977 msg/sec
+                    AtomicQueueB, 1,s:  15,905,075 msg/sec
+                    AtomicQueueB, 1,i:  15,788,547 msg/sec
+                    AtomicQueueB, 1,s:   4,328,516 msg/sec
+                    AtomicQueueB, 1,i:   4,199,049 msg/sec
+             OptimistAtomicQueue, 1,s: 457,982,404 msg/sec
+             OptimistAtomicQueue, 1,i: 335,926,687 msg/sec
+             OptimistAtomicQueue, 1,s:  54,700,854 msg/sec
+             OptimistAtomicQueue, 1,i:  53,320,365 msg/sec
+            OptimistAtomicQueueB, 1,s:  67,521,625 msg/sec
+            OptimistAtomicQueueB, 1,i:  68,419,857 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,709,644 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,447,668 msg/sec
+                    AtomicQueue2, 1,s:  19,653,983 msg/sec
+                    AtomicQueue2, 1,i:  20,284,424 msg/sec
+                    AtomicQueue2, 1,s:   5,028,025 msg/sec
+                    AtomicQueue2, 1,i:   5,010,332 msg/sec
+                   AtomicQueueB2, 1,s:  14,370,522 msg/sec
+                   AtomicQueueB2, 1,i:  15,604,718 msg/sec
+                   AtomicQueueB2, 1,s:   4,501,426 msg/sec
+                   AtomicQueueB2, 1,i:   4,330,026 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,102,329 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,165,584 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,669,081 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,910,627 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,392,431 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,543,264 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,307,631 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,773,122 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004665 sec/round-trip
+                 tbb::spin_mutex: 0.000000662 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001148 sec/round-trip
+                     AtomicQueue: 0.000000368 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000363 sec/round-trip
+
+[27/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,377,864 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,383,330 msg/sec
+                  LockFreeQueue2, 1,s:  72,147,261 msg/sec
+                  LockFreeQueue2, 1,i:  71,057,297 msg/sec
+          boost::lockfree::queue, 1,s:   2,299,818 msg/sec
+          boost::lockfree::queue, 1,i:   2,295,192 msg/sec
+                  TicketSpinlock, 1,s:   1,846,195 msg/sec
+                  TicketSpinlock, 1,i:   1,844,079 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,942,449 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,516,939 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,736,794 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,654,832 msg/sec
+                pthread_spinlock, 1,s:   3,620,140 msg/sec
+                pthread_spinlock, 1,i:   3,598,019 msg/sec
+                      std::mutex, 1,s:   5,681,485 msg/sec
+                      std::mutex, 1,i:   5,255,552 msg/sec
+                 tbb::spin_mutex, 1,s:  23,548,838 msg/sec
+                 tbb::spin_mutex, 1,i:  22,555,731 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,470,400 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,457,704 msg/sec
+                     AtomicQueue, 1,s:  21,159,574 msg/sec
+                     AtomicQueue, 1,i:  19,863,296 msg/sec
+                     AtomicQueue, 1,s:   4,200,683 msg/sec
+                     AtomicQueue, 1,i:   4,204,966 msg/sec
+                    AtomicQueueB, 1,s:  15,857,581 msg/sec
+                    AtomicQueueB, 1,i:  15,900,349 msg/sec
+                    AtomicQueueB, 1,s:   4,309,463 msg/sec
+                    AtomicQueueB, 1,i:   4,154,193 msg/sec
+             OptimistAtomicQueue, 1,s: 495,015,196 msg/sec
+             OptimistAtomicQueue, 1,i: 338,186,306 msg/sec
+             OptimistAtomicQueue, 1,s:  53,858,387 msg/sec
+             OptimistAtomicQueue, 1,i:  53,549,932 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,202,448 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,530,200 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,198,955 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,760,752 msg/sec
+                    AtomicQueue2, 1,s:  20,953,409 msg/sec
+                    AtomicQueue2, 1,i:  19,448,139 msg/sec
+                    AtomicQueue2, 1,s:   4,987,745 msg/sec
+                    AtomicQueue2, 1,i:   5,000,194 msg/sec
+                   AtomicQueueB2, 1,s:  14,303,751 msg/sec
+                   AtomicQueueB2, 1,i:  14,037,351 msg/sec
+                   AtomicQueueB2, 1,s:   4,386,159 msg/sec
+                   AtomicQueueB2, 1,i:   4,307,306 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,104,341 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,233,849 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,361,891 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,924,086 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,908,228 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,850,758 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,735,116 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,678,222 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000716 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000668 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004338 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000374 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000432 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000356 sec/round-trip
+
+[28/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,551,135 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,815,480 msg/sec
+                  LockFreeQueue2, 1,s:  71,376,517 msg/sec
+                  LockFreeQueue2, 1,i:  69,392,400 msg/sec
+          boost::lockfree::queue, 1,s:   2,297,450 msg/sec
+          boost::lockfree::queue, 1,i:   2,292,467 msg/sec
+                  TicketSpinlock, 1,s:   1,842,747 msg/sec
+                  TicketSpinlock, 1,i:   1,886,931 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,569,863 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,494,847 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,683,241 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,606,333 msg/sec
+                pthread_spinlock, 1,s:   3,680,953 msg/sec
+                pthread_spinlock, 1,i:   3,690,130 msg/sec
+                      std::mutex, 1,s:   4,840,306 msg/sec
+                      std::mutex, 1,i:   3,772,489 msg/sec
+                 tbb::spin_mutex, 1,s:  22,231,233 msg/sec
+                 tbb::spin_mutex, 1,i:  22,486,255 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,459,612 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,463,371 msg/sec
+                     AtomicQueue, 1,s:  20,060,200 msg/sec
+                     AtomicQueue, 1,i:  20,047,219 msg/sec
+                     AtomicQueue, 1,s:   4,216,550 msg/sec
+                     AtomicQueue, 1,i:   4,202,264 msg/sec
+                    AtomicQueueB, 1,s:  15,984,128 msg/sec
+                    AtomicQueueB, 1,i:  16,149,823 msg/sec
+                    AtomicQueueB, 1,s:   4,242,576 msg/sec
+                    AtomicQueueB, 1,i:   4,193,412 msg/sec
+             OptimistAtomicQueue, 1,s: 459,073,589 msg/sec
+             OptimistAtomicQueue, 1,i: 334,346,402 msg/sec
+             OptimistAtomicQueue, 1,s:  53,541,588 msg/sec
+             OptimistAtomicQueue, 1,i:  52,050,476 msg/sec
+            OptimistAtomicQueueB, 1,s:  64,575,705 msg/sec
+            OptimistAtomicQueueB, 1,i:  62,955,918 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,961,269 msg/sec
+            OptimistAtomicQueueB, 1,i:  54,024,150 msg/sec
+                    AtomicQueue2, 1,s:  16,924,477 msg/sec
+                    AtomicQueue2, 1,i:  15,901,305 msg/sec
+                    AtomicQueue2, 1,s:   4,974,868 msg/sec
+                    AtomicQueue2, 1,i:   5,030,779 msg/sec
+                   AtomicQueueB2, 1,s:  14,346,580 msg/sec
+                   AtomicQueueB2, 1,i:  14,124,551 msg/sec
+                   AtomicQueueB2, 1,s:   4,327,820 msg/sec
+                   AtomicQueueB2, 1,i:   4,417,322 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,160,480 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,052,881 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,615,739 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,964,980 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,265,451 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,083,767 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,095,779 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,794,891 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000491 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000775 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000669 sec/round-trip
+                pthread_spinlock: 0.000000789 sec/round-trip
+                      std::mutex: 0.000004516 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001151 sec/round-trip
+                     AtomicQueue: 0.000000368 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000371 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000429 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000342 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000358 sec/round-trip
+
+[29/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,530,214 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,498,453 msg/sec
+                  LockFreeQueue2, 1,s:  71,492,710 msg/sec
+                  LockFreeQueue2, 1,i:  68,450,767 msg/sec
+          boost::lockfree::queue, 1,s:   2,297,026 msg/sec
+          boost::lockfree::queue, 1,i:   2,304,034 msg/sec
+                  TicketSpinlock, 1,s:   1,836,903 msg/sec
+                  TicketSpinlock, 1,i:   1,845,103 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  11,393,810 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:  11,698,340 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,693,793 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,662,055 msg/sec
+                pthread_spinlock, 1,s:   3,617,427 msg/sec
+                pthread_spinlock, 1,i:   3,583,463 msg/sec
+                      std::mutex, 1,s:   5,545,219 msg/sec
+                      std::mutex, 1,i:   4,810,174 msg/sec
+                 tbb::spin_mutex, 1,s:  23,226,586 msg/sec
+                 tbb::spin_mutex, 1,i:  21,059,219 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,464,640 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,470,607 msg/sec
+                     AtomicQueue, 1,s:  20,131,948 msg/sec
+                     AtomicQueue, 1,i:  20,151,653 msg/sec
+                     AtomicQueue, 1,s:   4,216,155 msg/sec
+                     AtomicQueue, 1,i:   4,202,478 msg/sec
+                    AtomicQueueB, 1,s:  15,783,179 msg/sec
+                    AtomicQueueB, 1,i:  15,868,769 msg/sec
+                    AtomicQueueB, 1,s:   4,274,584 msg/sec
+                    AtomicQueueB, 1,i:   4,198,528 msg/sec
+             OptimistAtomicQueue, 1,s: 460,182,692 msg/sec
+             OptimistAtomicQueue, 1,i: 335,102,675 msg/sec
+             OptimistAtomicQueue, 1,s:  53,983,729 msg/sec
+             OptimistAtomicQueue, 1,i:  53,512,622 msg/sec
+            OptimistAtomicQueueB, 1,s:  68,045,402 msg/sec
+            OptimistAtomicQueueB, 1,i:  64,913,356 msg/sec
+            OptimistAtomicQueueB, 1,s:  55,243,887 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,312,434 msg/sec
+                    AtomicQueue2, 1,s:  16,008,793 msg/sec
+                    AtomicQueue2, 1,i:  16,236,773 msg/sec
+                    AtomicQueue2, 1,s:   5,071,935 msg/sec
+                    AtomicQueue2, 1,i:   5,040,798 msg/sec
+                   AtomicQueueB2, 1,s:  19,600,567 msg/sec
+                   AtomicQueueB2, 1,i:  15,598,964 msg/sec
+                   AtomicQueueB2, 1,s:   4,415,533 msg/sec
+                   AtomicQueueB2, 1,i:   4,325,568 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,077,612 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,105,374 msg/sec
+            OptimistAtomicQueue2, 1,s:  34,029,092 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,626,895 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,699,321 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,141,137 msg/sec
+           OptimistAtomicQueueB2, 1,s:  30,128,286 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,634,871 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000491 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000776 sec/round-trip
+                  TicketSpinlock: 0.000000713 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000671 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004609 sec/round-trip
+                 tbb::spin_mutex: 0.000000666 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001149 sec/round-trip
+                     AtomicQueue: 0.000000375 sec/round-trip
+                    AtomicQueueB: 0.000000431 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000352 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000439 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000355 sec/round-trip
+
+[30/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,710,455 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,882,122 msg/sec
+                  LockFreeQueue2, 1,s:  72,036,559 msg/sec
+                  LockFreeQueue2, 1,i:  70,802,976 msg/sec
+          boost::lockfree::queue, 1,s:   2,291,705 msg/sec
+          boost::lockfree::queue, 1,i:   2,290,443 msg/sec
+                  TicketSpinlock, 1,s:   1,837,858 msg/sec
+                  TicketSpinlock, 1,i:   1,858,080 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,910,396 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,966,121 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,753,513 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,689,158 msg/sec
+                pthread_spinlock, 1,s:   3,626,430 msg/sec
+                pthread_spinlock, 1,i:   3,616,081 msg/sec
+                      std::mutex, 1,s:   5,669,933 msg/sec
+                      std::mutex, 1,i:   5,655,040 msg/sec
+                 tbb::spin_mutex, 1,s:  21,507,707 msg/sec
+                 tbb::spin_mutex, 1,i:  23,360,436 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,458,191 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,454,350 msg/sec
+                     AtomicQueue, 1,s:  19,908,579 msg/sec
+                     AtomicQueue, 1,i:  26,118,573 msg/sec
+                     AtomicQueue, 1,s:   4,203,612 msg/sec
+                     AtomicQueue, 1,i:   4,191,520 msg/sec
+                    AtomicQueueB, 1,s:  16,226,711 msg/sec
+                    AtomicQueueB, 1,i:  15,593,907 msg/sec
+                    AtomicQueueB, 1,s:   4,281,927 msg/sec
+                    AtomicQueueB, 1,i:   4,222,287 msg/sec
+             OptimistAtomicQueue, 1,s: 455,224,152 msg/sec
+             OptimistAtomicQueue, 1,i: 333,076,864 msg/sec
+             OptimistAtomicQueue, 1,s:  52,804,360 msg/sec
+             OptimistAtomicQueue, 1,i:  53,134,736 msg/sec
+            OptimistAtomicQueueB, 1,s:  63,380,995 msg/sec
+            OptimistAtomicQueueB, 1,i:  68,046,652 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,478,366 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,916,232 msg/sec
+                    AtomicQueue2, 1,s:  16,813,524 msg/sec
+                    AtomicQueue2, 1,i:  19,981,113 msg/sec
+                    AtomicQueue2, 1,s:   4,988,943 msg/sec
+                    AtomicQueue2, 1,i:   4,975,016 msg/sec
+                   AtomicQueueB2, 1,s:  14,744,441 msg/sec
+                   AtomicQueueB2, 1,i:  18,038,406 msg/sec
+                   AtomicQueueB2, 1,s:   4,343,372 msg/sec
+                   AtomicQueueB2, 1,i:   4,439,614 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,012,590 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,201,689 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,349,774 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,172,810 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,794,811 msg/sec
+           OptimistAtomicQueueB2, 1,i:  51,128,978 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,978,634 msg/sec
+           OptimistAtomicQueueB2, 1,i:  30,014,373 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000490 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000773 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000667 sec/round-trip
+                pthread_spinlock: 0.000000747 sec/round-trip
+                      std::mutex: 0.000004770 sec/round-trip
+                 tbb::spin_mutex: 0.000000664 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001151 sec/round-trip
+                     AtomicQueue: 0.000000371 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000354 sec/round-trip
+                    AtomicQueue2: 0.000000429 sec/round-trip
+                   AtomicQueueB2: 0.000000440 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000358 sec/round-trip
+
+[31/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,939,769 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,679,354 msg/sec
+                  LockFreeQueue2, 1,s:  72,268,956 msg/sec
+                  LockFreeQueue2, 1,i:  70,760,140 msg/sec
+          boost::lockfree::queue, 1,s:   2,286,157 msg/sec
+          boost::lockfree::queue, 1,i:   2,293,118 msg/sec
+                  TicketSpinlock, 1,s:   1,840,309 msg/sec
+                  TicketSpinlock, 1,i:   1,848,932 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:  10,276,302 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:  11,641,640 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,729,552 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,643,684 msg/sec
+                pthread_spinlock, 1,s:   3,650,500 msg/sec
+                pthread_spinlock, 1,i:   3,643,080 msg/sec
+                      std::mutex, 1,s:   5,364,741 msg/sec
+                      std::mutex, 1,i:   5,502,653 msg/sec
+                 tbb::spin_mutex, 1,s:  22,280,046 msg/sec
+                 tbb::spin_mutex, 1,i:  22,561,227 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,459,246 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,459,813 msg/sec
+                     AtomicQueue, 1,s:  19,785,129 msg/sec
+                     AtomicQueue, 1,i:  26,840,723 msg/sec
+                     AtomicQueue, 1,s:   4,213,177 msg/sec
+                     AtomicQueue, 1,i:   4,275,102 msg/sec
+                    AtomicQueueB, 1,s:  16,225,195 msg/sec
+                    AtomicQueueB, 1,i:  15,878,172 msg/sec
+                    AtomicQueueB, 1,s:   4,248,546 msg/sec
+                    AtomicQueueB, 1,i:   4,161,258 msg/sec
+             OptimistAtomicQueue, 1,s: 493,951,563 msg/sec
+             OptimistAtomicQueue, 1,i: 332,797,529 msg/sec
+             OptimistAtomicQueue, 1,s:  53,336,405 msg/sec
+             OptimistAtomicQueue, 1,i:  52,476,662 msg/sec
+            OptimistAtomicQueueB, 1,s:  65,232,720 msg/sec
+            OptimistAtomicQueueB, 1,i:  66,458,651 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,472,639 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,190,103 msg/sec
+                    AtomicQueue2, 1,s:  15,033,725 msg/sec
+                    AtomicQueue2, 1,i:  15,822,744 msg/sec
+                    AtomicQueue2, 1,s:   4,928,597 msg/sec
+                    AtomicQueue2, 1,i:   5,000,190 msg/sec
+                   AtomicQueueB2, 1,s:  14,394,315 msg/sec
+                   AtomicQueueB2, 1,i:  18,256,877 msg/sec
+                   AtomicQueueB2, 1,s:   4,393,089 msg/sec
+                   AtomicQueueB2, 1,i:   4,365,822 msg/sec
+            OptimistAtomicQueue2, 1,s:  29,951,347 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,131,636 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,213,035 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,003,594 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,591,976 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,449,632 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,786,531 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,924,969 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000491 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000773 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000676 sec/round-trip
+                pthread_spinlock: 0.000000761 sec/round-trip
+                      std::mutex: 0.000004387 sec/round-trip
+                 tbb::spin_mutex: 0.000000668 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001148 sec/round-trip
+                     AtomicQueue: 0.000000423 sec/round-trip
+                    AtomicQueueB: 0.000000437 sec/round-trip
+             OptimistAtomicQueue: 0.000000376 sec/round-trip
+            OptimistAtomicQueueB: 0.000000363 sec/round-trip
+                    AtomicQueue2: 0.000000452 sec/round-trip
+                   AtomicQueueB2: 0.000000458 sec/round-trip
+            OptimistAtomicQueue2: 0.000000362 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[32/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,386,935 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  31,082,059 msg/sec
+                  LockFreeQueue2, 1,s:  72,157,725 msg/sec
+                  LockFreeQueue2, 1,i:  71,068,962 msg/sec
+          boost::lockfree::queue, 1,s:   2,293,017 msg/sec
+          boost::lockfree::queue, 1,i:   2,287,364 msg/sec
+                  TicketSpinlock, 1,s:   1,839,596 msg/sec
+                  TicketSpinlock, 1,i:   1,846,754 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   9,947,516 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:  11,457,249 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,712,009 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,648,001 msg/sec
+                pthread_spinlock, 1,s:   3,660,977 msg/sec
+                pthread_spinlock, 1,i:   3,661,056 msg/sec
+                      std::mutex, 1,s:   5,835,486 msg/sec
+                      std::mutex, 1,i:   5,588,190 msg/sec
+                 tbb::spin_mutex, 1,s:  23,102,888 msg/sec
+                 tbb::spin_mutex, 1,i:  20,785,150 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,480,681 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,480,050 msg/sec
+                     AtomicQueue, 1,s:  19,842,391 msg/sec
+                     AtomicQueue, 1,i:  20,424,698 msg/sec
+                     AtomicQueue, 1,s:   4,198,697 msg/sec
+                     AtomicQueue, 1,i:   4,234,672 msg/sec
+                    AtomicQueueB, 1,s:  15,953,833 msg/sec
+                    AtomicQueueB, 1,i:  15,541,211 msg/sec
+                    AtomicQueueB, 1,s:   4,292,247 msg/sec
+                    AtomicQueueB, 1,i:   4,169,251 msg/sec
+             OptimistAtomicQueue, 1,s: 397,948,179 msg/sec
+             OptimistAtomicQueue, 1,i: 368,915,204 msg/sec
+             OptimistAtomicQueue, 1,s:  52,964,867 msg/sec
+             OptimistAtomicQueue, 1,i:  53,051,945 msg/sec
+            OptimistAtomicQueueB, 1,s:  65,947,052 msg/sec
+            OptimistAtomicQueueB, 1,i:  66,926,072 msg/sec
+            OptimistAtomicQueueB, 1,s:  54,314,912 msg/sec
+            OptimistAtomicQueueB, 1,i:  53,156,428 msg/sec
+                    AtomicQueue2, 1,s:  15,988,659 msg/sec
+                    AtomicQueue2, 1,i:  16,321,731 msg/sec
+                    AtomicQueue2, 1,s:   4,984,946 msg/sec
+                    AtomicQueue2, 1,i:   4,991,054 msg/sec
+                   AtomicQueueB2, 1,s:  14,403,483 msg/sec
+                   AtomicQueueB2, 1,i:  14,816,724 msg/sec
+                   AtomicQueueB2, 1,s:   4,317,208 msg/sec
+                   AtomicQueueB2, 1,i:   4,574,616 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,452,607 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,411,488 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,704,010 msg/sec
+            OptimistAtomicQueue2, 1,i:  33,877,266 msg/sec
+           OptimistAtomicQueueB2, 1,s:  50,869,383 msg/sec
+           OptimistAtomicQueueB2, 1,i:  50,450,548 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,964,863 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,786,105 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000491 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000774 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000673 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000666 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004673 sec/round-trip
+                 tbb::spin_mutex: 0.000000662 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001152 sec/round-trip
+                     AtomicQueue: 0.000000377 sec/round-trip
+                    AtomicQueueB: 0.000000430 sec/round-trip
+             OptimistAtomicQueue: 0.000000370 sec/round-trip
+            OptimistAtomicQueueB: 0.000000355 sec/round-trip
+                    AtomicQueue2: 0.000000430 sec/round-trip
+                   AtomicQueueB2: 0.000000441 sec/round-trip
+            OptimistAtomicQueue2: 0.000000341 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000354 sec/round-trip
+
+[33/33] ---- Running throughput benchmarks (higher is better) ----
+     boost::lockfree::spsc_queue, 1,s:  31,483,548 msg/sec
+     boost::lockfree::spsc_queue, 1,i:  32,471,633 msg/sec
+                  LockFreeQueue2, 1,s:  72,689,738 msg/sec
+                  LockFreeQueue2, 1,i:  70,570,335 msg/sec
+          boost::lockfree::queue, 1,s:   2,296,398 msg/sec
+          boost::lockfree::queue, 1,i:   2,288,729 msg/sec
+                  TicketSpinlock, 1,s:   1,838,864 msg/sec
+                  TicketSpinlock, 1,i:   1,844,502 msg/sec
+   moodycamel::ReaderWriterQueue, 1,s:   7,467,487 msg/sec
+   moodycamel::ReaderWriterQueue, 1,i:   7,496,097 msg/sec
+     moodycamel::ConcurrentQueue, 1,s:   3,703,885 msg/sec
+     moodycamel::ConcurrentQueue, 1,i:   3,648,783 msg/sec
+                pthread_spinlock, 1,s:   3,680,228 msg/sec
+                pthread_spinlock, 1,i:   3,665,102 msg/sec
+                      std::mutex, 1,s:   5,467,494 msg/sec
+                      std::mutex, 1,i:   5,448,721 msg/sec
+                 tbb::spin_mutex, 1,s:  22,126,062 msg/sec
+                 tbb::spin_mutex, 1,i:  21,885,190 msg/sec
+   tbb::concurrent_bounded_queue, 1,s:   2,464,177 msg/sec
+   tbb::concurrent_bounded_queue, 1,i:   2,465,506 msg/sec
+                     AtomicQueue, 1,s:  19,667,667 msg/sec
+                     AtomicQueue, 1,i:  26,434,214 msg/sec
+                     AtomicQueue, 1,s:   4,271,210 msg/sec
+                     AtomicQueue, 1,i:   4,217,156 msg/sec
+                    AtomicQueueB, 1,s:  19,198,430 msg/sec
+                    AtomicQueueB, 1,i:  15,688,142 msg/sec
+                    AtomicQueueB, 1,s:   4,301,589 msg/sec
+                    AtomicQueueB, 1,i:   4,167,374 msg/sec
+             OptimistAtomicQueue, 1,s: 442,985,545 msg/sec
+             OptimistAtomicQueue, 1,i: 424,698,782 msg/sec
+             OptimistAtomicQueue, 1,s:  52,865,075 msg/sec
+             OptimistAtomicQueue, 1,i:  53,639,205 msg/sec
+            OptimistAtomicQueueB, 1,s:  62,661,470 msg/sec
+            OptimistAtomicQueueB, 1,i:  67,425,609 msg/sec
+            OptimistAtomicQueueB, 1,s:  53,735,099 msg/sec
+            OptimistAtomicQueueB, 1,i:  55,507,726 msg/sec
+                    AtomicQueue2, 1,s:  19,407,252 msg/sec
+                    AtomicQueue2, 1,i:  16,769,581 msg/sec
+                    AtomicQueue2, 1,s:   4,905,122 msg/sec
+                    AtomicQueue2, 1,i:   4,990,276 msg/sec
+                   AtomicQueueB2, 1,s:  17,310,055 msg/sec
+                   AtomicQueueB2, 1,i:  14,183,703 msg/sec
+                   AtomicQueueB2, 1,s:   4,376,153 msg/sec
+                   AtomicQueueB2, 1,i:   4,892,486 msg/sec
+            OptimistAtomicQueue2, 1,s:  30,285,547 msg/sec
+            OptimistAtomicQueue2, 1,i:  30,305,812 msg/sec
+            OptimistAtomicQueue2, 1,s:  33,072,326 msg/sec
+            OptimistAtomicQueue2, 1,i:  32,367,361 msg/sec
+           OptimistAtomicQueueB2, 1,s:  49,817,121 msg/sec
+           OptimistAtomicQueueB2, 1,i:  49,766,842 msg/sec
+           OptimistAtomicQueueB2, 1,s:  29,757,653 msg/sec
+           OptimistAtomicQueueB2, 1,i:  29,442,506 msg/sec
+
+---- Running ping-pong benchmarks (lower is better) ----
+     boost::lockfree::spsc_queue: 0.000000492 sec/round-trip
+                  LockFreeQueue2: 0.000000392 sec/round-trip
+          boost::lockfree::queue: 0.000000774 sec/round-trip
+                  TicketSpinlock: 0.000000715 sec/round-trip
+   moodycamel::ReaderWriterQueue: 0.000000674 sec/round-trip
+     moodycamel::ConcurrentQueue: 0.000000670 sec/round-trip
+                pthread_spinlock: 0.000000746 sec/round-trip
+                      std::mutex: 0.000004536 sec/round-trip
+                 tbb::spin_mutex: 0.000000663 sec/round-trip
+   tbb::concurrent_bounded_queue: 0.000001147 sec/round-trip
+                     AtomicQueue: 0.000000425 sec/round-trip
+                    AtomicQueueB: 0.000000432 sec/round-trip
+             OptimistAtomicQueue: 0.000000373 sec/round-trip
+            OptimistAtomicQueueB: 0.000000355 sec/round-trip
+                    AtomicQueue2: 0.000000431 sec/round-trip
+                   AtomicQueueB2: 0.000000444 sec/round-trip
+            OptimistAtomicQueue2: 0.000000355 sec/round-trip
+           OptimistAtomicQueueB2: 0.000000357 sec/round-trip
+
